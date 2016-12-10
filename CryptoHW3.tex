@@ -166,13 +166,25 @@ $\square$
   g^m \, g^n = g^{m + n}
 \end{align*}
 
-Since $m, n \in \N$ and $\N$ is closed under addition, $\left( m + n \right) \in \N$, it is clear that $g^{m + n} \in \langle g \rangle$.  Therefore, $\langle g \rangle$ is closed under its operation.  From our definition of $\langle g \rangle$, we know that $g^0 \in \langle g \rangle$.  Additionally, $g^0 \equiv e$; therefore $\langle g \rangle$ contains the identity element.  Now, let $m \in \Z^+$ and write $g^{-m} \, g^m$.  Using $g^{-m} \equiv \left( g^m \right)^{-1}$, this yields
+Since $m, n \in \N$ and $\N$ is closed under addition, $\left( m + n \right) \in \N$, it is clear that $g^{m + n} \in \langle g \rangle$.  Therefore, $\langle g \rangle$ is closed under its operation.  From our definition of $\langle g \rangle$, we know that $g^0 \in \langle g \rangle$.  Additionally, $g^0 \equiv e$; therefore $\langle g \rangle$ contains the identity element.  Now, let $m \in \Z^+$ and write $g^{-m} \, g^m$.  Using $g^{-m} \equiv \left( g^{-1} \right)^m$, this yields
 
 \begin{align*}
-  g^{-m} \, g^m = g^{-m + m} = g^0 = e
+  g^{-m} \, g^m = \left( g^{-1} \right)^m \, g^m = \left( g^{-1} \, g \right)^m = \left( e \right)^m = e
 \end{align*}
 
-which implies the ex
+which implies the existence of an inverse for each element in $\langle g \rangle$.  Finally, let $m, n, k \in \N$, then we have
+
+\begin{align}
+  g^m \, \left( g^n \, g^k \right) = g^m \, \left( g^{n + k} \right) = g^{m + \left( n + k \right)} \label{eq2a}
+\end{align}
+
+Since $\N$ is associative under addition, the expression in \ref{eq2a} may be rewritten as
+
+\begin{align*}
+  g^{m + \left( n + k \right)} = g^{\left( m + n \right) + k} = \left( g^{m + n} \right) \, g^k = \left( g^m \, g^n \right) \, g^k
+\end{align*}
+
+thereby demonstrating the associativity of operations in $\langle g \rangle$.  Since $\mathcal{G}$ is finite, it has order $m = \lvert \mathcal{G} \rvert$.  Therefore, the elements of $\langle g \rangle$ will be repeats of elements in $\mathcal{G}$ starting with $g^{m + 1}$.  Moreover, this means that $\langle g \rangle \subseteq \mathcal{G}$, thus satisfying the last condition for $\langle g \rangle$ to be a sub-group of $\mathcal{G}$.
 
 
 
