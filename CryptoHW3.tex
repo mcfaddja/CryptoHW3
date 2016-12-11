@@ -303,13 +303,38 @@ as expected.
 
 
 \numbpr{4}
-\prob{4}
+\prob{4} We denote the cross product of groups $\mathcal{G}$ and $\mathcal{H}$ as $\mathcal{G} \times \mathcal{H}$ and define it by 
 
+\begin{align}
+  \left( g, h \right) \circ \left( g', h' \right) \equiv \left( g \circ_\mathcal{G} g' \; , \; h \circ_\mathcal{H} h' \right) \label{eq4a}
+\end{align}
 
+To show that $\mathcal{G} \times \mathcal{H}$ is a group, we begin by proving closure under its operation.  Since $\mathcal{G}$ and $\mathcal{H}$ are groups, the we have $\left( g \circ_\mathcal{G} g' \right) \in \mathcal{G}$ and $\left( h \circ_\mathcal{H} h' \right) \in \mathcal{h}$.  Thus $\mathcal{G} \times \mathcal{H}$ is closed under its operation.  Next, we must show the existence of an identity in $\mathcal{G} \times \mathcal{H}$.  If we modify the expression in \ref{eq4a} so that $g' = e_\mathcal{G}$ and $h' = e_\mathcal{H}$, then we have 
 
+\begin{align}
+  \left( g, h \right) \circ \left( e_\mathcal{G}, e_\mathcal{H} \right) &= \left( g \circ_\mathcal{G} e_\mathcal{G} \; , \; h \circ_\mathcal{H} e_\mathcal{H} \right) \notag \\
+  &= \left( g, h \right) \notag
+\end{align}
 
+Therefore, $\mathcal{G} \times \mathcal{H}$ contains an identity element and it is defined as $\left( e_\mathcal{G}, e_\mathcal{H} \right)$.  Next, we must demonstrate the existence of inversed in $\mathcal{G} \times \mathcal{H}$.  To do this, we again modify the expression in \ref{eq4a}.  This time we substitute $g' = g^{-1}$ and $h' = h^{-1}$.  Applying this substitution to the expression in \ref{eq4a} gives
 
+\begin{align}
+  \left( g, h \right) \circ \left( g^{-1}, h^{-1} \right) &= \left( g \circ_\mathcal{G} g^{-1} \; , \; h \circ_\mathcal{H} h^{-1} \right) \notag \\
+  &= \left( e_\mathcal{G}, e_\mathcal{H} \right) \notag
+\end{align}
 
+Thus, $\mathcal{G} \times \mathcal{H}$ contains inverses for each of its elements.  Lastly, we show that associativity holds in $\mathcal{G} \times \mathcal{H}$.  We begin with
+
+\begin{align}
+  \left( \left( g_1 , h_1 \right) \circ \left( g_2, h_2 \right) \right) \circ \left( g_3, h_3 \right) &= \left( g_1 \circ_\mathcal{G} g_2, h_1 \circ_\mathcal{H} h_2 \right) \circ \left( g_3, h_3 \right) \notag \\
+  &= \left( \left(g_1 \circ_\mathcal{G} g_2\right) \circ_\mathcal{G} g_3, \left(h_1 \circ_\mathcal{H} h_2\right) \circ_\mathcal{H} h_3 \right) \label{eq4b}
+\end{align}
+
+Using the associativity of $\mathcal{G}$ and $\mathcal{H}$, we have
+
+\begin{align*}
+  \left( \left(g_1 \circ_\mathcal{G} g_2\right) \circ_\mathcal{G} g_3, \left(h_1 \circ_\mathcal{H} h_2\right) \circ_\mathcal{H} h_3 \right) = \left( g_1 \circ_\mathcal{G} \left(g_2 \circ_\mathcal{G} g_3\right), h_1 \circ_\mathcal{H} \left(h_2 \circ_\mathcal{H} h_3\right) \right)
+\end{align*}
 
 
 
