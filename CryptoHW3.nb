@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     14611,        486]
-NotebookOptionsPosition[     12833,        417]
-NotebookOutlinePosition[     13217,        434]
-CellTagsIndexPosition[     13174,        431]
+NotebookDataLength[     15379,        514]
+NotebookOptionsPosition[     13488,        441]
+NotebookOutlinePosition[     13872,        458]
+CellTagsIndexPosition[     13829,        455]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -393,24 +393,48 @@ Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{
+  RowBox[{
+   RowBox[{"Sum", "[", 
+    RowBox[{"i", ",", 
+     RowBox[{"{", 
+      RowBox[{"i", ",", "1", ",", "p"}], "}"}]}], "]"}], "-", 
+   RowBox[{"Sum", "[", 
+    RowBox[{"i", ",", 
+     RowBox[{"{", 
+      RowBox[{"i", ",", "1", ",", "p"}], "}"}]}], "]"}]}], "//", 
+  "FS3a"}]], "Input",
+ CellChangeTimes->{{3.6904481996325274`*^9, 3.690448321123672*^9}, {
+  3.69044951058029*^9, 3.690449597424254*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox["1", "2"], " ", "p", " ", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"-", "1"}], "+", 
+    SuperscriptBox["p", "3"]}], ")"}]}]], "Output",
+ CellChangeTimes->{{3.690448211853456*^9, 3.690448321572031*^9}, {
+  3.690449511406897*^9, 3.690449581029088*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
   RowBox[{"Sum", "[", 
    RowBox[{"i", ",", 
     RowBox[{"{", 
      RowBox[{"i", ",", "1", ",", 
-      RowBox[{
-       RowBox[{"p", "^", "2"}], "-", "1"}]}], "}"}]}], "]"}], "//", 
-  "FS3a"}]], "Input",
- CellChangeTimes->{{3.6904481996325274`*^9, 3.690448321123672*^9}}],
+      RowBox[{"p", "-", "1"}]}], "}"}]}], "]"}], "//", "FS3a"}]], "Input",
+ CellChangeTimes->{{3.690449606092437*^9, 3.690449634732181*^9}}],
 
 Cell[BoxData[
  RowBox[{
   FractionBox["1", "2"], " ", 
-  SuperscriptBox["p", "2"], " ", 
   RowBox[{"(", 
    RowBox[{
-    RowBox[{"-", "1"}], "+", 
-    SuperscriptBox["p", "2"]}], ")"}]}]], "Output",
- CellChangeTimes->{{3.690448211853456*^9, 3.690448321572031*^9}}]
+    RowBox[{"-", "1"}], "+", "p"}], ")"}], " ", "p"}]], "Output",
+ CellChangeTimes->{3.690449635379505*^9}]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
@@ -483,8 +507,12 @@ Cell[11386, 363, 399, 11, 43, "Input"],
 Cell[11788, 376, 407, 12, 65, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[12232, 393, 294, 9, 43, "Input"],
-Cell[12529, 404, 264, 8, 99, "Output"]
+Cell[12232, 393, 433, 13, 43, "Input"],
+Cell[12668, 408, 289, 8, 65, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12994, 421, 261, 7, 43, "Input"],
+Cell[13258, 430, 190, 6, 99, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
