@@ -231,26 +231,79 @@ This implies the following relation between the cardinalities of these sets
   \lvert \Z_{p^e}^\star \rvert < \lvert \left\{ 1, 2, \dots, p^e - 1 \right\} \rvert,
 \end{align*}
 
-where $\lvert \left\{ 1, 2, \dots, p^e - 1 \right\} \rvert$ has the value $\lvert \left\{ 1, 2, \dots, p^e - 1 \right\} \rvert = \left(p^e - 1\right)$.  It follows that the value of $\lvert \Z_{p^e}^\star \rvert$ can be obtained by determining the set of all values in $\left\{ 1, 2, \dots, p^e - 1 \right\}$ that do not satisfy the conition given in \ref{eq3a} and subtracting the cardinality of this set from $\left( p^e - 1 \right)$.
+where $\lvert \left\{ 1, 2, \dots, p^e - 1 \right\} \rvert$ has the value $\lvert \left\{ 1, 2, \dots, p^e - 1 \right\} \rvert = \left(p^e - 1\right)$.  It follows that the value of $\lvert \Z_{p^e}^\star \rvert$ can be obtained by determining the set of all values in $\left\{ 1, 2, \dots, p^e - 1 \right\}$ that do not satisfy the conition given in \ref{eq3a} and subtracting the cardinality of this set from $\left( p^e - 1 \right)$.  Since the common multiple is $p$, we will write this set in terms of be.  Thus, the set of values in $\left\{ 1, 2, \dots, p^e - 1 \right\}$ that do not satisfy the condition in \ref{eq3a} may be defined as 
+
+\begin{align*}
+  \left\{ p, 2p, 3p, \dots, p \, p, 2 p \, p, 3 p \, p, \dots, p^2 \, p, \dots, \left(p^{e-1} - 1\right) \, p \right\}
+\end{align*}
+
+This definition arises becuase only multiples of $p$ do not satistfy the condition in \ref{eq3a} and because $\left(p^{e-1} - 1\right) \, p = p^e - p$ is the largest element of $\left\{ 1, 2, \dots, p^e - 1 \right\}$ that does not satisfy the confition in \ref{eq3a}.  The cardinality of this set, $\left\{ p, 2p, 3p, \dots, p \, p, 2 p \, p, 3 p \, p, \dots, p^2 \, p, \dots, \left(p^{e-1} - 1\right) \, p \right\}$ is clearly
+
+\begin{align*}
+  \lvert \left\{ p, 2p, 3p, \dots, p \, p, 2 p \, p, 3 p \, p, \dots, p^2 \, p, \dots, \left(p^{e-1} - 1\right) \, p \right\} \rvert = \left(p^{e-1} - 1\right)
+\end{align*}
+
+Subtracting this value from $\lvert \left\{ 1, 2, \dots, p^e - 1 \right\} \rvert = \left(p^e - 1\right)$ finally yields
+
+\begin{align*}
+  \phi \left( p^e \right) = \left(p^e - 1\right) - \left(p^{e-1} - 1\right) = p^e - 1 - p^{e-1} + 1 = p^e - p^{e-1} = p^{e-1} \left( p - 1 \right)
+\end{align*}
+
+as desired. \newline
+
+To show that
+
+\begin{align*}
+  \phi \left( p q \right) = \phi \left( p \right) \, \phi \left( q \right)
+\end{align*} 
+
+holds for any relatively prime $p$ and $q$, we apply a similarly strategy to the one used above.  The number of possible elements of $\Z_{pq}^\star$ is $pq - 1$.  As before, we must take into account that some possible elements of $\Z_{pq}^\star$ will not satisfy the definition in \ref{eq3a}.  If we subtract the number of these elements, then we will have $\phi \left( p q \right) = \lvert \Z_{pq}^\star \rvert$.  Since there are $p - 1$ multiples of $q$ that do not satisfy the condition in \ref{eq3a}, we must subtract $p - 1$ from $pq - 1$.  Similarly, since there are also $q - 1$ multiples of $p$ that do not satisfy the same condition, we must also subtract $q - 1$ from $pq - 1$.  Carrying out these subtractions gives 
+
+\begin{align*}
+  \phi \left( p q \right) &= \left( p q - 1 \right) - \left( p - 1 \right) - \left( q - 1 \right) \\
+  &= pq - 1 - p + 1 - q + 1 \\
+  &= pq - p - q + 1 \\
+  &= \left( p - 1 \right) \left( q - 1 \right) \\
+  &= \phi \left( p \right) \, \phi \left( q \right)
+\end{align*}
+
+since $\phi \left( p \right)$ and $\phi \left( q \right)$ are defined as $\phi \left( p \right) = p - 1$ and $\phi \left( q \right) = q - 1$, respectively. \newline
+
+We will now use the previous result to show that, for an integer $N = \prod_i \left\{ p_i^{e_i} \right\}$ and $p_i$ distinct primes, we have
+
+\begin{align*}
+  \phi \left( N \right) = \prod_i \left\{ p_i^{e_i - 1} \left( p_i - 1 \right) \right\}
+\end{align*}
+
+To begin, we substitute $N = \prod_i \left\{ p_i^{e_i} \right\}$ for $N$ in the previous expression.  This gives
+
+\begin{align*}
+  \phi \left( N \right) = \phi \left( \prod_i \left\{ p_i^{e_i} \right\} \right)
+\end{align*}
+
+Using the result $\phi \left( p q \right) = \phi \left( p \right) \, \phi \left( q \right)$, we have
+
+\begin{align*}
+  \phi \left( N \right) = \prod_i \left\{ \phi \left( p_i^{e_i} \right) \right\}
+\end{align*}
+
+Finally, we apply the result $\phi \left( p^e \right) = p^{e-1} \left( p - 1 \right)$ to obtain 
+
+\begin{align*}
+  \phi \left( N \right) = \prod_i \left\{ p_i^{e_i - 1} \left( p_i - 1 \right) \right\}
+\end{align*}
+
+as expected.
 
 
-% Since we have $\phi \left( p^e \right) = \lvert \Z_{p^e}^\star \rvert$, by the definitions of $\phi \left( \mathfrak{p} \right)$ and $\Z_{\mathfrak{p}}^\star$ for any prime $\mathfrak{p}$,
-% 
-% \begin{align*}
-%   \phi \left( p^e \right) = \lvert \Z_{p^e}^\star \rvert 
-% \end{align*}
-% 
+
+
+\vspace{0.35in}
 
 
 
-
-
-
-
-
-
-
-
+\numbpr{4}
+\prob{4}
 
 
 
