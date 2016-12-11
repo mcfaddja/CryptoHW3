@@ -219,12 +219,27 @@ thereby demonstrating the associativity of operations in $\langle g \rangle$.  S
 
 
 \numbpr{3}
-\prob{3} Since we have $\phi \left( p^e \right) = \lvert \Z_{p^e}^\star \rvert$, by the definitions of $\phi \left( \mathfrak{p} \right)$ and $\Z_{\mathfrak{p}}^\star$ for any prime $\mathfrak{p}$,
+\prob{3}  Since $\Z_\mathfrak{p}^\star \equiv \left\{ a \in \left\{ 1, 2, \dots, \mathfrak{p}-1 \right\} \vert \gcd \left(a, \mathfrak{p}\right) = 1 \right\}$, for any $\mathfrak{p} \in \Z^+$, the set of possible elements for $\Z_{p^e}^\star$ is defined as
+
+\begin{align}
+  \Z_{p^e}^\star \subset \left\{ 1, 2, \dots, p^e - 1 \right\} \label{eq3a}
+\end{align}
+
+This implies the following relation between the cardinalities of these sets
 
 \begin{align*}
-  \phi \left( p^e \right) = \lvert \Z_{p^e}^\star \rvert 
+  \lvert \Z_{p^e}^\star \rvert < \lvert \left\{ 1, 2, \dots, p^e - 1 \right\} \rvert,
 \end{align*}
 
+where $\lvert \left\{ 1, 2, \dots, p^e - 1 \right\} \rvert$ has the value $\lvert \left\{ 1, 2, \dots, p^e - 1 \right\} \rvert = \left(p^e - 1\right)$.  It follows that the value of $\lvert \Z_{p^e}^\star \rvert$ can be obtained by determining the set of all values in $\left\{ 1, 2, \dots, p^e - 1 \right\}$ that do not satisfy the conition given in \ref{eq3a} and subtracting the cardinality of this set from $\left( p^e - 1 \right)$.
+
+
+% Since we have $\phi \left( p^e \right) = \lvert \Z_{p^e}^\star \rvert$, by the definitions of $\phi \left( \mathfrak{p} \right)$ and $\Z_{\mathfrak{p}}^\star$ for any prime $\mathfrak{p}$,
+% 
+% \begin{align*}
+%   \phi \left( p^e \right) = \lvert \Z_{p^e}^\star \rvert 
+% \end{align*}
+% 
 
 
 
