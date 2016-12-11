@@ -155,7 +155,7 @@ $\square$
 
 
 
-\vspace{0.25 in}
+\vspace{0.33 in}
 
 
 
@@ -207,10 +207,19 @@ which implies the existence of an inverse for each element in $\langle g \rangle
 Since $\N$ is associative under addition, the expression in \ref{eq2b} may be rewritten as
 
 \begin{align*}
-  \left(m + \left( n + k \right)\right) \times g = \left( \left(m+n\right) + k \right) \times g = 
+  \left(m + \left( n + k \right)\right) \times g = \left( \left(m+n\right) + k \right) \times g = \left(m+n\right) \times g \, k \times g = \left( m \times g \, n \times g \right) \, k \times g
 \end{align*}
 
-thereby demonstrating the associativity of operations in $\langle g \rangle$.  Since $\mathcal{G}$ is finite, it has order $m = \lvert \mathcal{G} \rvert$.  Therefore, the elements of $\langle g \rangle$ will be repeats of elements in $\mathcal{G}$ starting with $g^{m + 1}$.  Moreover, this means that $\langle g \rangle \subseteq \mathcal{G}$, thus satisfying the last condition for $\langle g \rangle$ to be a sub-group of $\mathcal{G}$.
+thereby demonstrating the associativity of operations in $\langle g \rangle$.  Since $\mathcal{G}$ is finite, it has order $m = \lvert \mathcal{G} \rvert$.  Therefore, the elements of $\langle g \rangle$ will be repeats of elements in $\mathcal{G}$ starting with $\left(m+1\right) \times g$.  Moreover, this means that $\langle g \rangle \subseteq \mathcal{G}$, thus satisfying the last condition for $\langle g \rangle$ to be a sub-group of $\mathcal{G}$.
+
+
+
+\vspace{0.33 in}
+
+
+
+\numbpr{3}
+\prob{3} 
 
 
 
