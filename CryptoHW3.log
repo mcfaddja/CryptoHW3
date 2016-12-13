@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.11.11)  13 DEC 2016 13:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.11.11)  13 DEC 2016 14:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -468,7 +468,7 @@ m10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm
 7.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qbkb.pfb></usr/share/texmf/
 fonts/type1/public/tex-gyre/qbkr.pfb></usr/share/texmf/fonts/type1/public/tex-g
 yre/qbkri.pfb>
-Output written on CryptoHW3.pdf (21 pages, 192874 bytes).
+Output written on CryptoHW3.pdf (21 pages, 192765 bytes).
 PDF statistics:
  137 PDF objects out of 1000 (max. 8388607)
  97 compressed objects within 1 object stream
