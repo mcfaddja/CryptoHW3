@@ -104,6 +104,8 @@ INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT subfiles/problem1.tex
+INPUT subfiles/problem1.tex
 INPUT /usr/share/texmf/fonts/tfm/public/tex-gyre/rm-qbkb.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
@@ -124,11 +126,17 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/rsfs/rsfs7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/rsfs/rsfs5.tfm
 OUTPUT CryptoHW3.pdf
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
+INPUT subfiles/problem2.tex
+INPUT subfiles/problem2.tex
+INPUT subfiles/problem3.tex
+INPUT subfiles/problem3.tex
 INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueuf.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueuf.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm5.tfm
+INPUT subfiles/problem4.tex
+INPUT subfiles/problem4.tex
 INPUT CryptoHW3.aux
 INPUT /usr/share/texmf/fonts/enc/dvips/tex-gyre/q-rm.enc
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb

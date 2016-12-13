@@ -109,232 +109,40 @@
 \begin{flushleft}
 
 
+\subfile{subfiles/problem1}
 
-\numbpr{1}
-\prob{1} Let $x, y, e, x^{-1} \in \mathcal{G}$ where $e \in \mathcal{G}$ is the identity element of $\mathcal{G}$ and $x^{-1}$ is such that both $x \, x^{-1} = e = x^{-1} \, x$ and $y \, x^{-1} = e = x^{-1} \, y$ hold.  Therefore we have 
 
-\begin{align}
-  x \, x^{-1} &= y \, x^{-1} \label{eq1a} \\
-  x \, x^{-1} &= x^{-1} \, y \label{eq1b} \\
-  x^{-1} \, x &= y \, x^{-1} \label{eq1c} \\
-  x^{-1} \, x &= x^{-1} \, y \label{eq1d} 
-\end{align}
+\vspace{0.25in}
 
-By applying the cancelation rule ($a b = a c \; \Rightarrow \; b = c$ for $a, b, c \in \mathbb{G}$ for any group $\mathbb{G}$) to the expression in \ref{eq1a} and \ref{eq1d}, it is clear that we have
 
-\begin{align}
-  x = y \label{eq1e}
-\end{align}
 
-Since $\mathcal{G}$ is abelian, we may rewrite the expression in \ref{eq1b} as
+\subfile{subfiles/problem2}
 
-\begin{align*}
-  x \, x^{-1} = x^{-1} \, x = x^{-1} \, y
-\end{align*}
 
-or
+\vspace{0.25in}
 
-\begin{align*}
-  x \, x^{-1} = y \, x^{-1} = x^{-1} \, y
-\end{align*}
 
-From either expression, the application of the cancelation rule yields the same result as in expression \ref{eq1e}.  Similarly, we use the abelian property of $\mathcal{G}$ to rewrite the expression in \ref{eq1c} as
 
-\begin{align*}
-  x^{-1} \, x = x \, x^{-1} = y \, x^{-1}
-\end{align*}
+\subfile{subfiles/problem3}
 
-or
 
-\begin{align*}
-  x^{-1} \, x = x^{-1} \, y = y \, x^{-1}
-\end{align*}
+\vspace{0.25in}
 
-Again, applying the cancelation rule to either expression yields the same result as in \ref{eq1e}.  Therefore, every element in an abelian group must have a unique inverse. \\
-$\square$
 
 
+\subfile{subfiles/problem4}
 
-\vspace{0.35 in}
 
+\vspace{0.25in}
 
 
-\numbpr{2}
-\prob{2} Let $\mathcal{G}$ be a finite group and $g \in \mathcal{G}$.  Now define $\langle g \rangle \equiv g^0, g^1, g^2, \dots, g^k, \dots$, where $k \in \N$.  Beginning with the multiplicative case, let $m, n \in \N$ so that we have
 
-\begin{align*}
-  g^m \, g^n = g^{m + n}
-\end{align*}
+\numbpr{5}
+\prob{5}
 
-Since $m, n \in \N$ and $\N$ is closed under addition, $\left( m + n \right) \in \N$, it is clear that $g^{m + n} \in \langle g \rangle$.  Therefore, $\langle g \rangle$ is closed under its operation.  From our definition of $\langle g \rangle$, we know that $g^0 \in \langle g \rangle$.  Additionally, $g^0 \equiv e = 1$; therefore $\langle g \rangle$ contains the identity element.  Now, let $m \in \Z^+$ and write $g^{-m} \, g^m$.  Using $g^{-m} \equiv \left( g^{-1} \right)^m$, this yields
 
-\begin{align*}
-  g^{-m} \, g^m = \left( g^{-1} \right)^m \, g^m = \left( g^{-1} \, g \right)^m = \left( e \right)^m = e = 1
-\end{align*}
 
-which implies the existence of an inverse for each element in $\langle g \rangle$.  Finally, let $m, n, k \in \N$, then we have
 
-\begin{align}
-  g^m \, \left( g^n \, g^k \right) = g^m \, \left( g^{n + k} \right) = g^{m + \left( n + k \right)} \label{eq2a}
-\end{align}
-
-Since $\N$ is associative under addition, the expression in \ref{eq2a} may be rewritten as
-
-\begin{align*}
-  g^{m + \left( n + k \right)} = g^{\left( m + n \right) + k} = \left( g^{m + n} \right) \, g^k = \left( g^m \, g^n \right) \, g^k
-\end{align*}
-
-thereby demonstrating the associativity of operations in $\langle g \rangle$.  Since $\mathcal{G}$ is finite, it has order $m = \lvert \mathcal{G} \rvert$.  Therefore, the elements of $\langle g \rangle$ will be repeats of elements in $\mathcal{G}$ starting with $g^{m + 1}$.  Moreover, this means that $\langle g \rangle \subseteq \mathcal{G}$, thus satisfying the last condition for $\langle g \rangle$ to be a sub-group of $\mathcal{G}$. \newline
-
-Continuing with the additive case, let $m, n \in \N$ so that we have
-
-\begin{align*}
-  m \times g \, n \times g = \left( m + n \right) \times g
-\end{align*}
-
-Since $m, n \in \N$ and $\N$ is closed under addition, $\left( m + n \right) \in \N$, it is clear that $\left(m + n\right) \times g \in \langle g \rangle$.  Therefore, $\langle g \rangle$ is closed under its operation.  From our definition of $\langle g \rangle$, we know that $0 \times g \in \langle g \rangle$.  Additionally, $0 \times g \equiv e = 0$; therefore $\langle g \rangle$ contains the identity element.  Now, let $m \in \Z^+$ and write $\left(-m\right) \times g \, m \times g$.  Using $\left(-m\right) \times g \equiv m \times \left( - g \right)^m$, this yields
-
-\begin{align*}
-  \left(-m\right) \times g \, m \times g = m \times \left( -g \right) \, m \times g = m \times \left( -g \, g \right) = m \times \left( e \right) = e = 0
-\end{align*}
-
-which implies the existence of an inverse for each element in $\langle g \rangle$.  Finally, let $m, n, k \in \N$, then we have
-
-\begin{align}
-  m \times g \, \left( n \times g \, k \times g \right) = m \times g \, \left( \left(n+k\right) \times g \right) = \left(m + \left( n + k \right)\right) \times g \label{eq2b}
-\end{align}
-
-Since $\N$ is associative under addition, the expression in \ref{eq2b} may be rewritten as
-
-\begin{align*}
-  \left(m + \left( n + k \right)\right) \times g = \left( \left(m+n\right) + k \right) \times g = \left(m+n\right) \times g \, k \times g = \left( m \times g \, n \times g \right) \, k \times g
-\end{align*}
-
-thereby demonstrating the associativity of operations in $\langle g \rangle$.  Since $\mathcal{G}$ is finite, it has order $m = \lvert \mathcal{G} \rvert$.  Therefore, the elements of $\langle g \rangle$ will be repeats of elements in $\mathcal{G}$ starting with $\left(m+1\right) \times g$.  Moreover, this means that $\langle g \rangle \subseteq \mathcal{G}$, thus satisfying the last condition for $\langle g \rangle$ to be a sub-group of $\mathcal{G}$.
-
-
-
-\vspace{0.35 in}
-
-
-
-\numbpr{3}
-\prob{3}  Since $\Z_\mathfrak{p}^\star \equiv \left\{ a \in \left\{ 1, 2, \dots, \mathfrak{p}-1 \right\} \vert \gcd \left(a, \mathfrak{p}\right) = 1 \right\}$, for any $\mathfrak{p} \in \Z^+$, the set of possible elements for $\Z_{p^e}^\star$ is defined as
-
-\begin{align}
-  \Z_{p^e}^\star \subset \left\{ 1, 2, \dots, p^e - 1 \right\} \label{eq3a}
-\end{align}
-
-This implies the following relation between the cardinalities of these sets
-
-\begin{align*}
-  \lvert \Z_{p^e}^\star \rvert < \lvert \left\{ 1, 2, \dots, p^e - 1 \right\} \rvert,
-\end{align*}
-
-where $\lvert \left\{ 1, 2, \dots, p^e - 1 \right\} \rvert$ has the value $\lvert \left\{ 1, 2, \dots, p^e - 1 \right\} \rvert = \left(p^e - 1\right)$.  It follows that the value of $\lvert \Z_{p^e}^\star \rvert$ can be obtained by determining the set of all values in $\left\{ 1, 2, \dots, p^e - 1 \right\}$ that do not satisfy the conition given in \ref{eq3a} and subtracting the cardinality of this set from $\left( p^e - 1 \right)$.  Since the common multiple is $p$, we will write this set in terms of be.  Thus, the set of values in $\left\{ 1, 2, \dots, p^e - 1 \right\}$ that do not satisfy the condition in \ref{eq3a} may be defined as 
-
-\begin{align*}
-  \left\{ p, 2p, 3p, \dots, p \, p, 2 p \, p, 3 p \, p, \dots, p^2 \, p, \dots, \left(p^{e-1} - 1\right) \, p \right\}
-\end{align*}
-
-This definition arises becuase only multiples of $p$ do not satistfy the condition in \ref{eq3a} and because $\left(p^{e-1} - 1\right) \, p = p^e - p$ is the largest element of $\left\{ 1, 2, \dots, p^e - 1 \right\}$ that does not satisfy the confition in \ref{eq3a}.  The cardinality of this set, $\left\{ p, 2p, 3p, \dots, p \, p, 2 p \, p, 3 p \, p, \dots, p^2 \, p, \dots, \left(p^{e-1} - 1\right) \, p \right\}$ is clearly
-
-\begin{align*}
-  \lvert \left\{ p, 2p, 3p, \dots, p \, p, 2 p \, p, 3 p \, p, \dots, p^2 \, p, \dots, \left(p^{e-1} - 1\right) \, p \right\} \rvert = \left(p^{e-1} - 1\right)
-\end{align*}
-
-Subtracting this value from $\lvert \left\{ 1, 2, \dots, p^e - 1 \right\} \rvert = \left(p^e - 1\right)$ finally yields
-
-\begin{align*}
-  \phi \left( p^e \right) = \left(p^e - 1\right) - \left(p^{e-1} - 1\right) = p^e - 1 - p^{e-1} + 1 = p^e - p^{e-1} = p^{e-1} \left( p - 1 \right)
-\end{align*}
-
-as desired. \newline
-
-To show that
-
-\begin{align*}
-  \phi \left( p q \right) = \phi \left( p \right) \, \phi \left( q \right)
-\end{align*} 
-
-holds for any relatively prime $p$ and $q$, we apply a similarly strategy to the one used above.  The number of possible elements of $\Z_{pq}^\star$ is $pq - 1$.  As before, we must take into account that some possible elements of $\Z_{pq}^\star$ will not satisfy the definition in \ref{eq3a}.  If we subtract the number of these elements, then we will have $\phi \left( p q \right) = \lvert \Z_{pq}^\star \rvert$.  Since there are $p - 1$ multiples of $q$ that do not satisfy the condition in \ref{eq3a}, we must subtract $p - 1$ from $pq - 1$.  Similarly, since there are also $q - 1$ multiples of $p$ that do not satisfy the same condition, we must also subtract $q - 1$ from $pq - 1$.  Carrying out these subtractions gives 
-
-\begin{align*}
-  \phi \left( p q \right) &= \left( p q - 1 \right) - \left( p - 1 \right) - \left( q - 1 \right) \\
-  &= pq - 1 - p + 1 - q + 1 \\
-  &= pq - p - q + 1 \\
-  &= \left( p - 1 \right) \left( q - 1 \right) \\
-  &= \phi \left( p \right) \, \phi \left( q \right)
-\end{align*}
-
-since $\phi \left( p \right)$ and $\phi \left( q \right)$ are defined as $\phi \left( p \right) = p - 1$ and $\phi \left( q \right) = q - 1$, respectively. \newline
-
-We will now use the previous result to show that, for an integer $N = \prod_i \left\{ p_i^{e_i} \right\}$ and $p_i$ distinct primes, we have
-
-\begin{align*}
-  \phi \left( N \right) = \prod_i \left\{ p_i^{e_i - 1} \left( p_i - 1 \right) \right\}
-\end{align*}
-
-To begin, we substitute $N = \prod_i \left\{ p_i^{e_i} \right\}$ for $N$ in the previous expression.  This gives
-
-\begin{align*}
-  \phi \left( N \right) = \phi \left( \prod_i \left\{ p_i^{e_i} \right\} \right)
-\end{align*}
-
-Using the result $\phi \left( p q \right) = \phi \left( p \right) \, \phi \left( q \right)$, we have
-
-\begin{align*}
-  \phi \left( N \right) = \prod_i \left\{ \phi \left( p_i^{e_i} \right) \right\}
-\end{align*}
-
-Finally, we apply the result $\phi \left( p^e \right) = p^{e-1} \left( p - 1 \right)$ to obtain 
-
-\begin{align*}
-  \phi \left( N \right) = \prod_i \left\{ p_i^{e_i - 1} \left( p_i - 1 \right) \right\}
-\end{align*}
-
-as expected.
-
-
-
-
-\vspace{0.35in}
-
-
-
-\numbpr{4}
-\prob{4} We denote the cross product of groups $\mathcal{G}$ and $\mathcal{H}$ as $\mathcal{G} \times \mathcal{H}$ and define it by 
-
-\begin{align}
-  \left( g, h \right) \circ \left( g', h' \right) \equiv \left( g \circ_\mathcal{G} g' \; , \; h \circ_\mathcal{H} h' \right) \label{eq4a}
-\end{align}
-
-To show that $\mathcal{G} \times \mathcal{H}$ is a group, we begin by proving closure under its operation.  Since $\mathcal{G}$ and $\mathcal{H}$ are groups, the we have $\left( g \circ_\mathcal{G} g' \right) \in \mathcal{G}$ and $\left( h \circ_\mathcal{H} h' \right) \in \mathcal{h}$.  Thus $\mathcal{G} \times \mathcal{H}$ is closed under its operation.  Next, we must show the existence of an identity in $\mathcal{G} \times \mathcal{H}$.  If we modify the expression in \ref{eq4a} so that $g' = e_\mathcal{G}$ and $h' = e_\mathcal{H}$, then we have 
-
-\begin{align}
-  \left( g, h \right) \circ \left( e_\mathcal{G}, e_\mathcal{H} \right) &= \left( g \circ_\mathcal{G} e_\mathcal{G} \; , \; h \circ_\mathcal{H} e_\mathcal{H} \right) \notag \\
-  &= \left( g, h \right) \notag
-\end{align}
-
-Therefore, $\mathcal{G} \times \mathcal{H}$ contains an identity element and it is defined as $\left( e_\mathcal{G}, e_\mathcal{H} \right)$.  Next, we must demonstrate the existence of inversed in $\mathcal{G} \times \mathcal{H}$.  To do this, we again modify the expression in \ref{eq4a}.  This time we substitute $g' = g^{-1}$ and $h' = h^{-1}$.  Applying this substitution to the expression in \ref{eq4a} gives
-
-\begin{align}
-  \left( g, h \right) \circ \left( g^{-1}, h^{-1} \right) &= \left( g \circ_\mathcal{G} g^{-1} \; , \; h \circ_\mathcal{H} h^{-1} \right) \notag \\
-  &= \left( e_\mathcal{G}, e_\mathcal{H} \right) \notag
-\end{align}
-
-Thus, $\mathcal{G} \times \mathcal{H}$ contains inverses for each of its elements.  Lastly, we show that associativity holds in $\mathcal{G} \times \mathcal{H}$.  We begin with
-
-\begin{align}
-  \left( \left( g_1 , h_1 \right) \circ \left( g_2, h_2 \right) \right) \circ \left( g_3, h_3 \right) &= \left( g_1 \circ_\mathcal{G} g_2, h_1 \circ_\mathcal{H} h_2 \right) \circ \left( g_3, h_3 \right) \notag \\
-  &= \left( \left(g_1 \circ_\mathcal{G} g_2\right) \circ_\mathcal{G} g_3, \left(h_1 \circ_\mathcal{H} h_2\right) \circ_\mathcal{H} h_3 \right) \label{eq4b}
-\end{align}
-
-Using the associativity of $\mathcal{G}$ and $\mathcal{H}$, we have
-
-\begin{align*}
-  \left( \left(g_1 \circ_\mathcal{G} g_2\right) \circ_\mathcal{G} g_3, \left(h_1 \circ_\mathcal{H} h_2\right) \circ_\mathcal{H} h_3 \right) = \left( g_1 \circ_\mathcal{G} \left(g_2 \circ_\mathcal{G} g_3\right), h_1 \circ_\mathcal{H} \left(h_2 \circ_\mathcal{H} h_3\right) \right)
-\end{align*}
 
 
 
