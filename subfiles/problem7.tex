@@ -6,28 +6,35 @@
 
 
 \numbpr{7}
-\prob{7}  We start with $a^{\phi \left( N \right)} = 1 \mod N$ and note $\phi \left( N \right) = \phi \left( p \right) \, \phi \left( q \right)$ to obtain
+\prob{7}  We start with values for $N$ and $\phi \left( N \right)$.  For clarity, we will denote the numerical value for $\phi \left( N \right)$ by the symbol $\Phi_N$.  Further, we know both that $N = p q$ and 
 
 \begin{align}
-  a^{\phi \left( N \right)} = 1 \mod N = a^{\phi \left( p \right) \, \phi \left( q \right)} \notag
+  \phi \left( N \right) &= \phi \left( p \right) \, \phi \left( q \right) \notag \\
+  &= \left( p - 1 \right) \left( q - 1 \right) \notag \\
+  &= pq - p - q + 1 = \Phi_N \label{eq7a}
 \end{align}
-  
-Since $\phi \left( p \right) = p - 1$ and $\phi \left( q \right) = q - 1$,  the previous result is equivalent to
+
+Additionally, note that the result in \ref{eq7a} was obtained using the relations $\phi \left( p \right) = p - 1$ and $\phi \left( q \right) = q - 1$.  The result in \ref{eq7a}, along with $N = p q$, means that we have the system of equations
 
 \begin{align}
-  a^{\phi \left( N \right)} = 1 \mod N &= a^{\phi \left( p \right) \, \phi \left( q \right)} \notag \\
-  1 \mod N &= a^{\left(p - 1\right) \left(q - 1\right)} \notag
+  \Phi_N = pq - p - q + 1 \tag{\ref{eq7a}}
 \end{align}
 
+and
 
+\begin{align}
+  N = p \, q \label{eq7b}
+\end{align}
 
+Rewriting the expression in \ref{eq7b} as $N = p \, q \; \Rightarrow \; q = N / p$ and applying the result, along with $N = p \, q$ to the expression in \ref{eq7a}, we have
 
+\begin{align}
+  \Phi_N &= N - p - \frac{N}{p} + 1 \notag \\
+  p \, \Phi_N &= p \, N - p^2 - N + p \notag \\
+  0 &= p^2 + \left( \Phi_N - N - 1 \right) p + N \label{eq7c}
+\end{align}
 
-
-$a^{p - 1} = 1 \mod p$, and $a^{q - 1} = 1 \mod q$
-
-
-
+which is solvable for $p$ in polynomial time (using the quadratic formula).  Applying the result from solving \ref{eq7c} for $p$ to the expression in \ref{eq7b} yields a value for $q$ in polynomial time as well.
 
 
 
