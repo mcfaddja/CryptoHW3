@@ -1,12 +1,12 @@
 \documentclass{article}[12]
 %\setlength{\textheight}{8.4in}
-%\setlength{\topmargin}{-0.15in}
+%\setlength{\topmargin}{-0.5in}
 %\setlength{\oddsidemargin}{0in}
 %\setlength{\evensidemargin}{0in}
 %\setlength{\textwidth}{6.5in}
 
-\setlength{\textheight}{8.75in}
-\setlength{\topmargin}{-.5in}
+\setlength{\textheight}{8.40in}
+\setlength{\topmargin}{-0.15in}
 \setlength{\oddsidemargin}{-0.25in}
 \setlength{\evensidemargin}{0in}
 \setlength{\textwidth}{7in}
@@ -109,117 +109,63 @@
 \begin{flushleft}
 
 
+\subfile{subfiles/problem1}
 
-\numbpr{1}
-\prob{1} Let $x, y, e, x^{-1} \in \mathcal{G}$ where $e \in \mathcal{G}$ is the identity element of $\mathcal{G}$ and $x^{-1}$ is such that both $x \, x^{-1} = e = x^{-1} \, x$ and $y \, x^{-1} = e = x^{-1} \, y$ hold.  Therefore we have 
 
-\begin{align}
-  x \, x^{-1} &= y \, x^{-1} \label{eq1a} \\
-  x \, x^{-1} &= x^{-1} \, y \label{eq1b} \\
-  x^{-1} \, x &= y \, x^{-1} \label{eq1c} \\
-  x^{-1} \, x &= x^{-1} \, y \label{eq1d} 
-\end{align}
-
-By applying the cancelation rule ($a b = a c \; \Rightarrow \; b = c$ for $a, b, c \in \mathbb{G}$ for any group $\mathbb{G}$) to the expression in \ref{eq1a} and \ref{eq1d}, it is clear that we have
-
-\begin{align}
-  x = y \label{eq1e}
-\end{align}
-
-Since $\mathcal{G}$ is abelian, we may rewrite the expression in \ref{eq1b} as
-
-\begin{align*}
-  x \, x^{-1} = x^{-1} \, x = x^{-1} \, y
-\end{align*}
-
-or
-
-\begin{align*}
-  x \, x^{-1} = y \, x^{-1} = x^{-1} \, y
-\end{align*}
-
-From either expression, the application of the cancelation rule yields the same result as in expression \ref{eq1e}.  Similarly, we use the abelian property of $\mathcal{G}$ to rewrite the expression in \ref{eq1c} as
-
-\begin{align*}
-  x^{-1} \, x = x \, x^{-1} = y \, x^{-1}
-\end{align*}
-
-or
-
-\begin{align*}
-  x^{-1} \, x = x^{-1} \, y = y \, x^{-1}
-\end{align*}
-
-Again, applying the cancelation rule to either expression yields the same result as in \ref{eq1e}.  Therefore, every element in an abelian group must have a unique inverse. \\
-$\square$
+\vspace{0.25in}
 
 
 
-\vspace{0.33 in}
+\subfile{subfiles/problem2}
+
+
+\vspace{0.25in}
 
 
 
-\numbpr{2}
-\prob{2} Let $\mathcal{G}$ be a finite group and $g \in \mathcal{G}$.  Now define $\langle g \rangle \equiv g^0, g^1, g^2, \dots, g^k, \dots$, where $k \in \N$.  Beginning with the multiplicative case, let $m, n \in \N$ so that we have
+\subfile{subfiles/problem3}
+
+
+\vspace{0.25in}
+
+
+
+\subfile{subfiles/problem4}
+
+
+\vspace{0.25in}
+
+
+
+\subfile{subfiles/problem5}
+
+
+\vspace{0.25in}
+
+
+
+\numbpr{6}
+\prob{6}  We begin by applying the \underline{Euler Phi Function} to $\left( x^e \right)^d = x \mod N$ so that we obtain the result
 
 \begin{align*}
-  g^m \, g^n = g^{m + n}
+   \phi \left( \left( x^e \right)^d \right) &= \phi \left(  x \mod N \right) \\
+   
 \end{align*}
 
-Since $m, n \in \N$ and $\N$ is closed under addition, $\left( m + n \right) \in \N$, it is clear that $g^{m + n} \in \langle g \rangle$.  Therefore, $\langle g \rangle$ is closed under its operation.  From our definition of $\langle g \rangle$, we know that $g^0 \in \langle g \rangle$.  Additionally, $g^0 \equiv e = 1$; therefore $\langle g \rangle$ contains the identity element.  Now, let $m \in \Z^+$ and write $g^{-m} \, g^m$.  Using $g^{-m} \equiv \left( g^{-1} \right)^m$, this yields
-
-\begin{align*}
-  g^{-m} \, g^m = \left( g^{-1} \right)^m \, g^m = \left( g^{-1} \, g \right)^m = \left( e \right)^m = e = 1
-\end{align*}
-
-which implies the existence of an inverse for each element in $\langle g \rangle$.  Finally, let $m, n, k \in \N$, then we have
-
-\begin{align}
-  g^m \, \left( g^n \, g^k \right) = g^m \, \left( g^{n + k} \right) = g^{m + \left( n + k \right)} \label{eq2a}
-\end{align}
-
-Since $\N$ is associative under addition, the expression in \ref{eq2a} may be rewritten as
-
-\begin{align*}
-  g^{m + \left( n + k \right)} = g^{\left( m + n \right) + k} = \left( g^{m + n} \right) \, g^k = \left( g^m \, g^n \right) \, g^k
-\end{align*}
-
-thereby demonstrating the associativity of operations in $\langle g \rangle$.  Since $\mathcal{G}$ is finite, it has order $m = \lvert \mathcal{G} \rvert$.  Therefore, the elements of $\langle g \rangle$ will be repeats of elements in $\mathcal{G}$ starting with $g^{m + 1}$.  Moreover, this means that $\langle g \rangle \subseteq \mathcal{G}$, thus satisfying the last condition for $\langle g \rangle$ to be a sub-group of $\mathcal{G}$. \newline
-
-Continuing with the additive case, let $m, n \in \N$ so that we have
-
-\begin{align*}
-  m \times g \, n \times g = \left( m + n \right) \times g
-\end{align*}
-
-Since $m, n \in \N$ and $\N$ is closed under addition, $\left( m + n \right) \in \N$, it is clear that $\left(m + n\right) \times g \in \langle g \rangle$.  Therefore, $\langle g \rangle$ is closed under its operation.  From our definition of $\langle g \rangle$, we know that $0 \times g \in \langle g \rangle$.  Additionally, $0 \times g \equiv e = 0$; therefore $\langle g \rangle$ contains the identity element.  Now, let $m \in \Z^+$ and write $\left(-m\right) \times g \, m \times g$.  Using $\left(-m\right) \times g \equiv m \times \left( - g \right)^m$, this yields
-
-\begin{align*}
-  \left(-m\right) \times g \, m \times g = m \times \left( -g \right) \, m \times g = m \times \left( -g \, g \right) = m \times \left( e \right) = e = 0
-\end{align*}
-
-which implies the existence of an inverse for each element in $\langle g \rangle$.  Finally, let $m, n, k \in \N$, then we have
-
-\begin{align}
-  m \times g \, \left( n \times g \, k \times g \right) = m \times g \, \left( \left(n+k\right) \times g \right) = \left(m + \left( n + k \right)\right) \times g \label{eq2b}
-\end{align}
-
-Since $\N$ is associative under addition, the expression in \ref{eq2b} may be rewritten as
-
-\begin{align*}
-  \left(m + \left( n + k \right)\right) \times g = \left( \left(m+n\right) + k \right) \times g = \left(m+n\right) \times g \, k \times g = \left( m \times g \, n \times g \right) \, k \times g
-\end{align*}
-
-thereby demonstrating the associativity of operations in $\langle g \rangle$.  Since $\mathcal{G}$ is finite, it has order $m = \lvert \mathcal{G} \rvert$.  Therefore, the elements of $\langle g \rangle$ will be repeats of elements in $\mathcal{G}$ starting with $\left(m+1\right) \times g$.  Moreover, this means that $\langle g \rangle \subseteq \mathcal{G}$, thus satisfying the last condition for $\langle g \rangle$ to be a sub-group of $\mathcal{G}$.
 
 
 
-\vspace{0.33 in}
 
 
 
-\numbpr{3}
-\prob{3} 
+
+
+\newpage
+
+
+
+\numbpr{7}
+\prob{7}  
 
 
 
@@ -234,6 +180,24 @@ thereby demonstrating the associativity of operations in $\langle g \rangle$.  S
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 
 
