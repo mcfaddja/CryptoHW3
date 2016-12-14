@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.13)  14 DEC 2016 12:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.13)  14 DEC 2016 14:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -451,7 +451,7 @@ File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 ) [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ] [2] [3] [4] [5]
-(./problem8.aux)
+[6] (./problem8.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -461,13 +461,13 @@ LaTeX Warning: There were multiply-defined labels.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 5175 strings out of 493027
- 73390 string characters out of 6134069
- 164513 words of memory out of 5000000
- 8613 multiletter control sequences out of 15000+600000
- 34795 words of font info for 38 fonts, out of 8000000 for 9000
+ 5179 strings out of 493027
+ 73432 string characters out of 6134069
+ 164558 words of memory out of 5000000
+ 8617 multiletter control sequences out of 15000+600000
+ 40950 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,13n,45p,972b,2311s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 46i,13n,45p,969b,2375s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/tex-gyre/q-
 rm.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/lo
 cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/loc
@@ -483,10 +483,10 @@ ve/2015/texmf-dist/fonts/type1/public/tex-gyre/qbkb.pfb></usr/local/texlive/201
 mf-dist/fonts/type1/public/tex-gyre/qbkr.pfb></usr/local/texlive/2015/texmf-dis
 t/fonts/type1/public/tex-gyre/qbkri.pfb></usr/local/texlive/2015/texmf-dist/fon
 ts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on problem8.pdf (5 pages, 183866 bytes).
+Output written on problem8.pdf (6 pages, 190347 bytes).
 PDF statistics:
- 74 PDF objects out of 1000 (max. 8388607)
- 53 compressed objects within 1 object stream
+ 77 PDF objects out of 1000 (max. 8388607)
+ 55 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
