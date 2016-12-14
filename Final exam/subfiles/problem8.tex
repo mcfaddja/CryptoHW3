@@ -1,0 +1,178 @@
+\documentclass[../CryptoHW3.tex]{subfiles}
+
+\begin{document}
+\begin{flushleft}
+
+
+
+\numbpr{8}
+\prob{8}  For a public key encryption scheme $\prod = \left( \text{{\fontfamily{phv}\selectfont Gen}}, \, \text{{\fontfamily{phv}\selectfont Enc}}, \, \text{{\fontfamily{phv}\selectfont Dec}} \right)$, we define \textbf{CPA} security according to the probability obtaining a secure result, as defined in the privacy experiment $\text{{\fontfamily{phv}\selectfont PubK}}^{\text{{\fontfamily{phv}\selectfont LR-cpa}}}_{\mathcal{A}, \prod}$.  This experiment goes as follows \newline
+
+
+\textbf{The LR-orcale experiment} $\text{{\fontfamily{phv}\selectfont PubK}}^{\text{{\fontfamily{phv}\selectfont LR-cpa}}}_{\mathcal{A}, \prod} \left( n \right)$
+
+\begin{enumerate}
+  \item $\text{{\fontfamily{phv}\selectfont Gen}} \left( 1^n \right)$ \emph{is run to obtain keys} $\left( pk, sk \right)$.
+  \item \emph{A uniform bit} $b \in \left\{ 0, 1 \right\}$ \emph{is chosen}.
+  \item \emph{The adversary} $\mathcal{A}$ \emph{is given input} $pk$ \emph{and oracle access to} $\text{{\fontfamily{phv}\selectfont LR}}_{pk,b} \left( \cdot , \cdot \right)$.
+  \item \emph{The adversary} $\mathcal{A}$ \emph{outputs a bit} $b'$.
+  \item \emph{The adversary} $\mathcal{A}$ \emph{is defined to be} $1$ \emph{if} $b' = b$, \emph{and} $0$ \emph{otherwise}.  \emph{If} $\text{{\fontfamily{phv}\selectfont PubK}}^{\text{{\fontfamily{phv}\selectfont LR-cpa}}}_{\mathcal{A}, \prod} \left( n \right) = 1$, \emph{we say that} $\mathcal{A}$ \textbf{succeeds}.
+\end{enumerate}
+
+Using this definition for the experiment $\text{{\fontfamily{phv}\selectfont PubK}}^{\text{{\fontfamily{phv}\selectfont LR-cpa}}}_{\mathcal{A}, \prod}$, we say that the encryption scheme $\prod$ is secure if the probability of $\mathcal{A}$ succeeding, $\Pr \left[ \text{{\fontfamily{phv}\selectfont PubK}}^{\text{{\fontfamily{phv}\selectfont LR-cpa}}}_{\mathcal{A}, \prod} \left( n \right) = 1 \right]$ satisfies the condition 
+
+\begin{align}
+  \Pr \left[ \text{{\fontfamily{phv}\selectfont PubK}}^{\text{{\fontfamily{phv}\selectfont LR-cpa}}}_{\mathcal{A}, \prod} \left( n \right) = 1 \right] \leq \frac{1}{2} + \text{{\fontfamily{phv}\selectfont negl }} \left( n \right) \label{eq8a}
+\end{align}
+
+where $\text{{\fontfamily{phv}\selectfont negl }} \left( n \right)$ is a function/value which is negligible on the order of $n$.  \newline
+
+In detail, what we are seeking is indistinguishability of multiple encryptions.  That is to say, if we have the plain-text of two different messages (\emph{denote them} $m_1$ \emph{and} $m_2$), which we encrypt using a public key (\emph{denote it} $pk$), then an adversary $\mathcal{A}$ having access to the cipher-text of both messages \textbf{\emph{and}} the public key should not be able to distinguish the cipher-text of the messages  under any circumstances.  Using $pk$, the encryption algorithm (\emph{denoted} $\text{{\fontfamily{phv}\selectfont Enc}}_{pk}$) generates cipher-text from messages $m_1$ and $m_2$.  We use
+
+\begin{align*}
+  \text{{\fontfamily{phv}\selectfont Enc}}_{pk} \left( m_1 \right) \qquad \text{ \textbf{\underline{and}} } \qquad \text{{\fontfamily{phv}\selectfont Enc}}_{pk} \left( m_2 \right)
+\end{align*}
+
+to denote the cipher-text generated for these messages, respectively.  \newline
+
+
+We denote both the information ($pk$,  $\text{{\fontfamily{phv}\selectfont Enc}}_{pk} \left( m_1 \right)$, \emph{\&} $\text{{\fontfamily{phv}\selectfont Enc}}_{pk} \left( m_2 \right)$) available/provided to the adversary $\mathcal{A}$ by
+
+\begin{align}
+  \mathcal{A} \left( pk,  \text{{\fontfamily{phv}\selectfont Enc}}_{pk} \left( m_1 \right), \text{{\fontfamily{phv}\selectfont Enc}}_{pk} \left( m_2 \right) \right) \label{eq8b}
+\end{align}
+
+furthermore, we also use this notating to represent the outcome of running $\text{{\fontfamily{phv}\selectfont PubK}}$ on $\mathcal{A}$.  When $\mathcal{A}$ succeeds, then the expression in \ref{eq8b} yields the result 
+
+\begin{align}
+  \mathcal{A} \left( pk,  \text{{\fontfamily{phv}\selectfont Enc}}_{pk} \left( m_1 \right), \text{{\fontfamily{phv}\selectfont Enc}}_{pk} \left( m_2 \right) \right) = 1 \label{eq8aaA}
+\end{align}
+
+The expression in \ref{eq8b} yields
+
+\begin{align}
+  \mathcal{A} \left( pk,  \text{{\fontfamily{phv}\selectfont Enc}}_{pk} \left( m_1 \right), \text{{\fontfamily{phv}\selectfont Enc}}_{pk} \left( m_2 \right) \right) = 0 \label{eq8aaB}
+\end{align}
+
+otherwise. \newline
+
+
+Since \textbf{CPA} security requires security over multiple encryptions using the same public key, we will formally define this security using \textbf{\emph{two}} pairs of messages that are all being encrypted using the same public key.  We denote the first pair of messages by $m_{1, 0}$ and $m_{2, 0}$.  Similarly, the second pair of messages are denoted by  $m_{1, 1}$ and $m_{2, 1}$.  We now use the same notation as in \ref{eq8b} with these message pairs (\emph{and their associated public key} $ph$) to represent the attack by $\mathcal{A}$.  This gives
+
+\begin{align}
+  \mathcal{A} \left( pk,  \text{{\fontfamily{phv}\selectfont Enc}}_{pk} \left( m_{1, 0} \right), \text{{\fontfamily{phv}\selectfont Enc}}_{pk} \left( m_{2, 0} \right) \right), \tag{\ref{eq8b} a} \label{eq8b1}
+\end{align}
+
+for the first message pair; and 
+
+\begin{align}
+  \mathcal{A} \left( pk,  \text{{\fontfamily{phv}\selectfont Enc}}_{pk} \left( m_{1, 1} \right), \text{{\fontfamily{phv}\selectfont Enc}}_{pk} \left( m_{2, 1} \right) \right), \tag{\ref{eq8b} b} \label{eq8b2}
+\end{align}
+\setcounter{equation}{2}
+
+for the second message pair. \newline
+
+
+Before proceeding, we point out that we can equivalently use the expression from \ref{eq8aaA} in place of the $\text{{\fontfamily{phv}\selectfont PubK}}^{\text{{\fontfamily{phv}\selectfont LR-cpa}}}_{\mathcal{A}, \prod} \left( n \right) = 1$ term from \ref{eq8a}.  More clearly, we may formally write this equivalence as
+
+\begin{align*}
+  \text{{\fontfamily{phv}\selectfont PubK}}^{\text{{\fontfamily{phv}\selectfont LR-cpa}}}_{\mathcal{A}, \prod} \left( n \right) = 1  \qquad  \longleftrightarrow \qquad \mathcal{A} \left( pk,  \text{{\fontfamily{phv}\selectfont Enc}}_{pk} \left( m_1 \right), \text{{\fontfamily{phv}\selectfont Enc}}_{pk} \left( m_2 \right) \right) = 1
+\end{align*}
+
+This allows us to write a version of \ref{eq8a} for both \label{eq8b1} and \label{eq8b2}.  For the first message pair (\emph{represented in \ref{eq8b1}}), this gives the result
+
+\begin{align}
+  \Pr \left[ \mathcal{A} \left( pk,  \text{{\fontfamily{phv}\selectfont Enc}}_{pk} \left( m_{1, 0} \right), \text{{\fontfamily{phv}\selectfont Enc}}_{pk} \left( m_{2, 0} \right) \right) = 1 \right] \leq \frac{1}{2} + \text{{\fontfamily{phv}\selectfont negl}}_0 \left( n \right), \label{eq8d1}
+\end{align}
+
+where $\text{{\fontfamily{phv}\selectfont negl}}_0$ represents the negligible function required to satisfy this expression as applied to this message pair (\emph{we are making allowances in case the results in} \ref{eq8b1} \emph{and} \ref{eq8b2} \emph{use different} $\text{{\fontfamily{phv}\selectfont negl }}$ \emph{functions}).  Writing our expression for the second message pair In a similar fashion yields
+
+\begin{align}
+  \Pr \left[ \mathcal{A} \left( pk,  \text{{\fontfamily{phv}\selectfont Enc}}_{pk} \left( m_{1, 1} \right), \text{{\fontfamily{phv}\selectfont Enc}}_{pk} \left( m_{2, 1} \right) \right) = 1 \right] \leq \frac{1}{2} + \text{{\fontfamily{phv}\selectfont negl}}_1 \left( n \right) \label{eq8d2}
+\end{align}
+
+where $\text{{\fontfamily{phv}\selectfont negl}}_1$ represents the negligible function required to satisfy this expression as applied to this message pair just as before (\emph{we will see later that any difference between these} $\text{{\fontfamily{phv}\selectfont negl}}$ \emph{functions is inconsequential; however differentiating between the} $\text{{\fontfamily{phv}\selectfont negl}}$ \emph{functions used in either case is required for mathematical rigor}). \newline
+
+
+To continue the equation in \ref{eq8d2} is subtracted from the equation in \ref{eq8d1}, after which the result \emph{difference} will be simplified, thereby allowing us to obtain the following expressions for the initial and then the simplified results  
+
+\begin{align*}
+  &\Bigl\{ \Pr \left[ \mathcal{A} \left( pk,  \text{{\fontfamily{phv}\selectfont Enc}}_{pk} \left( m_{1, 0} \right), \text{{\fontfamily{phv}\selectfont Enc}}_{pk} \left( m_{2, 0} \right) \right) = 1 \right] - \Bigr. \\
+  &\Bigl. \qquad \qquad \qquad \quad - \Pr \left[ \mathcal{A} \left( pk,  \text{{\fontfamily{phv}\selectfont Enc}}_{pk} \left( m_{1, 1} \right), \text{{\fontfamily{phv}\selectfont Enc}}_{pk} \left( m_{2, 1} \right) \right) = 1 \right] \Bigr\} \leq \left( \frac{1}{2} + \text{{\fontfamily{phv}\selectfont negl}}_0 \left( n \right) \right) - \left( \frac{1}{2} + \text{{\fontfamily{phv}\selectfont negl}}_10 \left( n \right) \right) \\
+  %& \\
+  &\Bigl\{ \Pr \left[ \mathcal{A} \left( pk,  \text{{\fontfamily{phv}\selectfont Enc}}_{pk} \left( m_{1, 0} \right), \text{{\fontfamily{phv}\selectfont Enc}}_{pk} \left( m_{2, 0} \right) \right) = 1 \right] - \Bigr. \\
+  &\Bigl. \qquad \qquad \qquad \quad - \Pr \left[ \mathcal{A} \left( pk,  \text{{\fontfamily{phv}\selectfont Enc}}_{pk} \left( m_{1, 1} \right), \text{{\fontfamily{phv}\selectfont Enc}}_{pk} \left( m_{2, 1} \right) \right) = 1 \right] \Bigr\} \leq \text{{\fontfamily{phv}\selectfont negl}}_0 \left( n \right) - \text{{\fontfamily{phv}\selectfont negl}}_1 \left( n \right)
+\end{align*}
+
+Taking the absolute value of this simplified expression allows us to obtain the result
+
+\begin{align}
+  &\biggl| \Pr \left[ \mathcal{A} \left( pk,  \text{{\fontfamily{phv}\selectfont Enc}}_{pk} \left( m_{1, 0} \right), \text{{\fontfamily{phv}\selectfont Enc}}_{pk} \left( m_{2, 0} \right) \right) = 1 \right] - \biggr. \notag \\
+  &\biggl. \qquad \qquad \qquad \quad - \Pr \left[ \mathcal{A} \left( pk,  \text{{\fontfamily{phv}\selectfont Enc}}_{pk} \left( m_{1, 1} \right), \text{{\fontfamily{phv}\selectfont Enc}}_{pk} \left( m_{2, 1} \right) \right) = 1 \right] \biggr| \leq \Bigl| \text{{\fontfamily{phv}\selectfont negl}}_0 \left( n \right) - \text{{\fontfamily{phv}\selectfont negl}}_1 \left( n \right) \Bigr|  \label{eq8e}
+\end{align}
+
+Considering the right-hand-side of \ref{eq8e}, we see that $\Bigl| \text{{\fontfamily{phv}\selectfont negl}}_0 \left( n \right) - \text{{\fontfamily{phv}\selectfont negl}}_1 \left( n \right) \Bigr|$ also negligible itself.  Therefore, we may define another negligible function, of order $n$, that satisfies the relation
+
+\begin{align*}
+  \Bigl| \text{{\fontfamily{phv}\selectfont negl}}_0 \left( n \right) - \text{{\fontfamily{phv}\selectfont negl}}_1 \left( n \right) \Bigr| = \text{{\fontfamily{phv}\selectfont negl}} \left( n \right),
+\end{align*}
+
+where $\text{{\fontfamily{phv}\selectfont negl}}$ is another negligible function, of order $n$.  Applying this to the expression in \ref{eq8e}, we obtain the final result
+
+\begin{align}
+  &\biggl| \Pr \left[ \mathcal{A} \left( pk,  \text{{\fontfamily{phv}\selectfont Enc}}_{pk} \left( m_{1, 0} \right), \text{{\fontfamily{phv}\selectfont Enc}}_{pk} \left( m_{2, 0} \right) \right) = 1 \right] - \biggr. \notag \\
+  &\biggl. \qquad \qquad \qquad \quad - \Pr \left[ \mathcal{A} \left( pk,  \text{{\fontfamily{phv}\selectfont Enc}}_{pk} \left( m_{1, 1} \right), \text{{\fontfamily{phv}\selectfont Enc}}_{pk} \left( m_{2, 1} \right) \right) = 1 \right] \biggr| \leq \text{{\fontfamily{phv}\selectfont negl}} \left( n \right) \label{eq8f}
+\end{align}
+
+which provides a formal definition for \textbf{CPA} security.  In simple terms, the expression in \ref{eq8f} formally describes the requirement that a \textbf{CPA} secure encryption scheme be \textbf{\emph{non-deterministic}}. That is to say, the expression in \ref{eq8f} mathematical quantifies the requirement that the cipher-text generated by any \textbf{CPA} secure encryption scheme be indistinguishable for any arbitrary pair of messages.  It is the arbitrary nature of the messages that give rise to the requirement for non-determinism because the result in \ref{eq8f} must hold when the messages are \textbf{\emph{identical}}.  The only way for identical messages to be indistinguishably enciphered is for the encryption scheme used to encipher them to allow, with some non-zero probably, every possible message in the message space $\mathcal{M}$ to encrypted into any cipher-text in the cipher-text space, $\mathcal{C}$. \newline
+
+
+\vspace{0.10in}
+
+
+Now, we will define \textbf{CCA} security, again, in terms of an indistinguishability experiment. We will continue to denote the encryption scheme in question as $\prod = \left( \text{{\fontfamily{phv}\selectfont Gen}}, \, \text{{\fontfamily{phv}\selectfont Enc}}, \, \text{{\fontfamily{phv}\selectfont Dec}} \right)$; however, we will denote the experiment by $\text{{\fontfamily{phv}\selectfont PubK}}^{\text{{\fontfamily{phv}\selectfont cca}}}_{\mathcal{A}, \prod}$.  We describe \emph{this} experiment as follows \newline
+
+
+\textbf{The CCA indistinguishability experiment} $\text{{\fontfamily{phv}\selectfont PubK}}^{\text{{\fontfamily{phv}\selectfont cca}}}_{\mathcal{A}, \prod} \left( n \right)$
+
+\begin{enumerate}
+  \item $\text{{\fontfamily{phv}\selectfont Gen}} \left( 1^n \right)$ \emph{is run to obtain keys} $\left( pk, sk \right)$.
+  \item \emph{The adversary} $\mathcal{A}$ \emph{is given} $pk$ \emph{and access to a \underline{decryption} oracle}, $\text{{\fontfamily{phv}\selectfont Dec}}_{sk} \left( \cdot \right)$.  \emph{The adversary,} $\mathcal{A}$, \emph{outputs a pair of messages,} $m_0, m_1$, \emph{which have the same length.} (\emph{The messages must must in the message space,} $\mathcal{M}$, \emph{that is associated with} $pk$.)
+  \item \emph{A uniform bit} $b \in \left\{ 0, 1 \right\}$ \emph{is chosen, and then a cipher-text} $c \leftarrow \text{{\fontfamily{phv}\selectfont Enc}}_{pk} \left( m_b \right)$ \emph{is computed and given to} $\mathcal{A}$.
+  \item \emph{The adversary} $\mathcal{A}$ \emph{continues to interact with the decryption oracle, but \underline{may not} request a decryption of} $c$ \emph{itself.  Finally,} $\mathcal{A}$ \emph{outputs a bit} $b'$.
+  \item \emph{The output of the experiment is defined to be} $1$ \emph{if} $b' = b$ (\emph{the adversary} $\mathcal{A}$ \textbf{\emph{succeeds}}), \emph{and} $0$ \emph{otherwise.}
+\end{enumerate}
+
+Similar to how we arrived at the expression in \ref{eq8a}, this definition of $\text{{\fontfamily{phv}\selectfont PubK}}^{\text{{\fontfamily{phv}\selectfont cca}}}_{\mathcal{A}, \prod}$ can be used to show that the encryption scheme $\prod$ is secure by requiring that the probability of $\mathcal{A}$ succeeding, $\Pr \left[ \text{{\fontfamily{phv}\selectfont PubK}}^{\text{{\fontfamily{phv}\selectfont cca}}}_{\mathcal{A}, \prod} \left( n \right) = 1 \right]$ satisfiy the condition 
+
+\begin{align}
+  \Pr \left[ \text{{\fontfamily{phv}\selectfont PubK}}^{\text{{\fontfamily{phv}\selectfont cca}}}_{\mathcal{A}, \prod} \left( n \right) = 1 \right] \leq \frac{1}{2} +  \text{{\fontfamily{phv}\selectfont negl }} \left( n \right) \label{eq8g}
+\end{align}
+
+Unfortunately, without serious modification, public key cryptograph is \textbf{\underline{\emph{NOT}}} secure under the \textbf{CCA} paradigm.
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{flushleft}
+\end{document}

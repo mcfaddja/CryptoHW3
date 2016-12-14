@@ -1,0 +1,54 @@
+\documentclass[../CryptoHW3.tex]{subfiles}
+
+\begin{document}
+\begin{flushleft}
+
+
+
+\numbpr{1}
+\prob{1} Let $x, y, e, x^{-1} \in \mathcal{G}$ where $e \in \mathcal{G}$ is the identity element of $\mathcal{G}$ and $x^{-1}$ is such that both $x \, x^{-1} = e = x^{-1} \, x$ and $y \, x^{-1} = e = x^{-1} \, y$ hold.  Therefore we have 
+
+\begin{align}
+  x \, x^{-1} &= y \, x^{-1} \label{eq1a} \\
+  x \, x^{-1} &= x^{-1} \, y \label{eq1b} \\
+  x^{-1} \, x &= y \, x^{-1} \label{eq1c} \\
+  x^{-1} \, x &= x^{-1} \, y \label{eq1d} 
+\end{align}
+
+By applying the cancelation rule ($a b = a c \; \Rightarrow \; b = c$ for $a, b, c \in \mathbb{G}$ for any group $\mathbb{G}$) to the expression in \ref{eq1a} and \ref{eq1d}, it is clear that we have
+
+\begin{align}
+  x = y \label{eq1e}
+\end{align}
+
+Since $\mathcal{G}$ is abelian, we may rewrite the expression in \ref{eq1b} as
+
+\begin{align*}
+  x \, x^{-1} = x^{-1} \, x = x^{-1} \, y
+\end{align*}
+
+or
+
+\begin{align*}
+  x \, x^{-1} = y \, x^{-1} = x^{-1} \, y
+\end{align*}
+
+From either expression, the application of the cancelation rule yields the same result as in expression \ref{eq1e}.  Similarly, we use the abelian property of $\mathcal{G}$ to rewrite the expression in \ref{eq1c} as
+
+\begin{align*}
+  x^{-1} \, x = x \, x^{-1} = y \, x^{-1}
+\end{align*}
+
+or
+
+\begin{align*}
+  x^{-1} \, x = x^{-1} \, y = y \, x^{-1}
+\end{align*}
+
+Again, applying the cancelation rule to either expression yields the same result as in \ref{eq1e}.  Therefore, every element in an abelian group must have a unique inverse. \\
+$\square$
+
+
+
+\end{flushleft}
+\end{document}
