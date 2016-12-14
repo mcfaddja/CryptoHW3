@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.13)  14 DEC 2016 11:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.13)  14 DEC 2016 11:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -354,7 +354,7 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 ))))
-LaTeX Font Info:    Try loading font information for OT1+qbk on input line 31.
+LaTeX Font Info:    Try loading font information for OT1+qbk on input line 36.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/tex-gyre/ot1qbk.fd
 File: ot1qbk.fd 2009/09/25 v1.2 font definition file for OT1/qbk
@@ -369,18 +369,18 @@ LaTeX Warning: Label `eq8b2' multiply defined.
 )
 \openout1 = `CryptoHW3.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
  (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count124
@@ -443,13 +443,13 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ) [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ])
-(./subfiles/problem2.tex [2]) (./subfiles/problem3.tex
+(./subfiles/problem2.tex [2] [3]) (./subfiles/problem3.tex
 LaTeX Font Info:    Try loading font information for U+euf on input line 9.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-) [3] [4]
-[5]) (./subfiles/problem4.tex [6]) (./subfiles/problem5.tex [7] [8] [9])
+) [4] [5])
+(./subfiles/problem4.tex [6] [7]) (./subfiles/problem5.tex [8] [9])
 (./subfiles/problem6.tex [10] [11]) (./subfiles/problem7.tex [12])
 (./subfiles/problem8.tex
 LaTeX Font Info:    Try loading font information for OT1+phv on input line 9.
@@ -457,11 +457,11 @@ LaTeX Font Info:    Try loading font information for OT1+phv on input line 9.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 ) [13] [14]
-[15] [16]) [17] (./subfiles/problem9.tex) [18] (./subfiles/problem10.tex)
-[19] (./subfiles/problem11.tex) [20] (./subfiles/problem12.tex) [21]
-(./subfiles/problem14.tex) [22] (./subfiles/problem15.tex) [23]
-(./subfiles/problem16.tex) [24] (./subfiles/problem17.tex) [25]
-(./subfiles/problem18.tex) [26] (./CryptoHW3.aux)
+[15] [16] [17]) [18] (./subfiles/problem9.tex) [19] (./subfiles/problem10.tex)
+[20] (./subfiles/problem11.tex) [21] (./subfiles/problem12.tex) [22]
+(./subfiles/problem14.tex) [23] (./subfiles/problem15.tex) [24]
+(./subfiles/problem16.tex) [25] (./subfiles/problem17.tex) [26]
+(./subfiles/problem18.tex) [27] (./CryptoHW3.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -477,7 +477,7 @@ Here is how much of TeX's memory you used:
  8629 multiletter control sequences out of 15000+600000
  35503 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,13n,43p,992b,2415s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,13n,43p,1001b,2411s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/tex-gyre/q-
 rm.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/lo
 cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/loc
@@ -499,10 +499,10 @@ cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr
 ive/2015/texmf-dist/fonts/type1/public/tex-gyre/qbkr.pfb></usr/local/texlive/20
 15/texmf-dist/fonts/type1/public/tex-gyre/qbkri.pfb></usr/local/texlive/2015/te
 xmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on CryptoHW3.pdf (26 pages, 252482 bytes).
+Output written on CryptoHW3.pdf (27 pages, 252941 bytes).
 PDF statistics:
- 167 PDF objects out of 1000 (max. 8388607)
- 118 compressed objects within 2 object streams
+ 170 PDF objects out of 1000 (max. 8388607)
+ 120 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
