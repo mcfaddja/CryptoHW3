@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.13)  14 DEC 2016 05:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.13)  14 DEC 2016 08:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -363,7 +363,14 @@ LaTeX Font Info:    Try loading font information for OT1+qbk on input line 31.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/tex-gyre/ot1qbk.fd
 File: ot1qbk.fd 2009/09/25 v1.2 font definition file for OT1/qbk
 )))
-(./problem8.aux)
+(./problem8.aux
+
+LaTeX Warning: Label `eq8b1' multiply defined.
+
+
+LaTeX Warning: Label `eq8b2' multiply defined.
+
+)
 \openout1 = `problem8.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
@@ -378,8 +385,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
-
-(/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+ (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count124
 \scratchdimen=\dimen138
@@ -444,19 +450,24 @@ LaTeX Font Info:    Try loading font information for OT1+phv on input line 9.
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 ) [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-] (./problem8.aux) )
+] [2] [3] [4] [5]
+(./problem8.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 5161 strings out of 493027
- 73273 string characters out of 6134069
- 157380 words of memory out of 5000000
- 8600 multiletter control sequences out of 15000+600000
- 25575 words of font info for 35 fonts, out of 8000000 for 9000
+ 5173 strings out of 493027
+ 73378 string characters out of 6134069
+ 163493 words of memory out of 5000000
+ 8611 multiletter control sequences out of 15000+600000
+ 34795 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,11n,45p,575b,2240s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 46i,13n,45p,658b,2315s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/tex-gyre/q-
 rm.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/lo
 cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/loc
@@ -464,16 +475,18 @@ al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/
 local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/l
 ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/loc
 al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local
-/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
-texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/te
-xlive/2015/texmf-dist/fonts/type1/public/tex-gyre/qbkb.pfb></usr/local/texlive/
-2015/texmf-dist/fonts/type1/public/tex-gyre/qbkr.pfb></usr/local/texlive/2015/t
-exmf-dist/fonts/type1/public/tex-gyre/qbkri.pfb></usr/local/texlive/2015/texmf-
-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on problem8.pdf (1 page, 139573 bytes).
+/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
+live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texli
+ve/2015/texmf-dist/fonts/type1/public/tex-gyre/qbkb.pfb></usr/local/texlive/201
+5/texmf-dist/fonts/type1/public/tex-gyre/qbkbi.pfb></usr/local/texlive/2015/tex
+mf-dist/fonts/type1/public/tex-gyre/qbkr.pfb></usr/local/texlive/2015/texmf-dis
+t/fonts/type1/public/tex-gyre/qbkri.pfb></usr/local/texlive/2015/texmf-dist/fon
+ts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on problem8.pdf (5 pages, 180532 bytes).
 PDF statistics:
- 54 PDF objects out of 1000 (max. 8388607)
- 39 compressed objects within 1 object stream
+ 74 PDF objects out of 1000 (max. 8388607)
+ 53 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

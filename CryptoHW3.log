@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.13)  14 DEC 2016 07:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.13)  14 DEC 2016 08:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -359,7 +359,14 @@ LaTeX Font Info:    Try loading font information for OT1+qbk on input line 31.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/tex-gyre/ot1qbk.fd
 File: ot1qbk.fd 2009/09/25 v1.2 font definition file for OT1/qbk
 )
-(./CryptoHW3.aux)
+(./CryptoHW3.aux
+
+LaTeX Warning: Label `eq8b1' multiply defined.
+
+
+LaTeX Warning: Label `eq8b2' multiply defined.
+
+)
 \openout1 = `CryptoHW3.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 108.
@@ -374,8 +381,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 108.
 LaTeX Font Info:    ... okay on input line 108.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 108.
 LaTeX Font Info:    ... okay on input line 108.
-
-(/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+ (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count124
 \scratchdimen=\dimen138
@@ -450,26 +456,30 @@ LaTeX Font Info:    Try loading font information for OT1+phv on input line 9.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
-)) [13]
-(./subfiles/problem9.tex) [14] (./subfiles/problem10.tex) [15]
-(./subfiles/problem11.tex) [16] (./subfiles/problem12.tex) [17]
-(./subfiles/problem14.tex) [18] (./subfiles/problem15.tex) [19]
-(./subfiles/problem16.tex) [20] (./subfiles/problem17.tex) [21]
-(./subfiles/problem18.tex) [22] (./CryptoHW3.aux) )
+) [13] [14]
+[15] [16] [17]) [18] (./subfiles/problem9.tex) [19] (./subfiles/problem10.tex)
+[20] (./subfiles/problem11.tex) [21] (./subfiles/problem12.tex) [22]
+(./subfiles/problem14.tex) [23] (./subfiles/problem15.tex) [24]
+(./subfiles/problem16.tex) [25] (./subfiles/problem17.tex) [26]
+(./subfiles/problem18.tex) [27] (./CryptoHW3.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 5229 strings out of 493027
- 74210 string characters out of 6134069
- 164532 words of memory out of 5000000
- 8616 multiletter control sequences out of 15000+600000
- 26283 words of font info for 38 fonts, out of 8000000 for 9000
+ 5241 strings out of 493027
+ 74315 string characters out of 6134069
+ 165653 words of memory out of 5000000
+ 8627 multiletter control sequences out of 15000+600000
+ 35503 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,13n,43p,972b,2409s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc
-}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/tex-gyre/q-rm.enc}</usr/lo
+ 37i,13n,43p,972b,2415s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/tex-gyre/q-
+rm.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/lo
 cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/loc
 al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/
 local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/l
@@ -485,13 +495,14 @@ ive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/
 texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/lo
 cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr
 /local/texlive/2015/texmf-dist/fonts/type1/public/tex-gyre/qbkb.pfb></usr/local
-/texlive/2015/texmf-dist/fonts/type1/public/tex-gyre/qbkr.pfb></usr/local/texli
-ve/2015/texmf-dist/fonts/type1/public/tex-gyre/qbkri.pfb></usr/local/texlive/20
-15/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on CryptoHW3.pdf (22 pages, 219843 bytes).
+/texlive/2015/texmf-dist/fonts/type1/public/tex-gyre/qbkbi.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/public/tex-gyre/qbkr.pfb></usr/local/texlive/20
+15/texmf-dist/fonts/type1/public/tex-gyre/qbkri.pfb></usr/local/texlive/2015/te
+xmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on CryptoHW3.pdf (27 pages, 249911 bytes).
 PDF statistics:
- 150 PDF objects out of 1000 (max. 8388607)
- 106 compressed objects within 2 object streams
+ 170 PDF objects out of 1000 (max. 8388607)
+ 120 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
