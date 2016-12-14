@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.13)  14 DEC 2016 11:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.13)  14 DEC 2016 11:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -472,7 +472,7 @@ ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr
 r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/tex-gyre/qbkb.pfb></usr/
 local/texlive/2015/texmf-dist/fonts/type1/public/tex-gyre/qbkr.pfb>
-Output written on problem3.pdf (3 pages, 129775 bytes).
+Output written on problem3.pdf (3 pages, 129772 bytes).
 PDF statistics:
  67 PDF objects out of 1000 (max. 8388607)
  48 compressed objects within 1 object stream
