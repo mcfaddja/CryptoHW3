@@ -1,0 +1,97 @@
+\documentclass[../CryptoFinal.tex]{subfiles}
+
+\begin{document}
+\begin{flushleft}
+
+
+
+\numbpr{5}
+\prob{5}  First, we will show that if $x \in \Z_N$, then $\forall x \in \Z_N^\star, \, f \left( x \right) = \left( x_p, x_q \right)$ where $x_p \in \Z_p$ \& $x_q \in \Z_q$ and $x_p \in \Z_p^\star$ \& $x_q \in \Z_q^\star$.  To do this, we assume, to the contrary, that $x_p \notin \Z_p^\star$.  This assumption implies that $\gcd \left( \left[ x \mod p \right], p \right) \neq 1$ and, by extension, that $\gcd \left( x, p \right) \neq 1$.  Moreover, this leads to the conclusion that $\gcd \left( x, N \right) \neq 1$.  This cannot be, otherwise we would have $z \notin \Z_N^\star$, violating the definition of $\Z_N^\star$ we started with.  Therefore, $x_p \in \Z_p^\star$ \emph{must} hold.  To show that $x_q \in \Z_q^\star$ \emph{must} also hold, we make the similar contrary assumption (that $x_q \notin \Z_q^\star$) and arrive at a similar contradiction, thereby requiring that $x_q \in \Z_q^\star$. \newline
+
+Next, we will show that $f$ is an isomorphism.  We begin by showing that $f$ is \underline{one-to-one}.  To begin, let
+
+\begin{align*}
+  f \left( x \right) = \left( x_p, x_q \right) = f \left( x' \right)
+\end{align*}
+
+Then, we let
+
+\begin{align*}
+  x = x_p = x' \mod p
+\end{align*}
+
+and
+
+\begin{align*}
+  x = x_q = x' \mod q
+\end{align*}
+
+This implies that $\left( x - x' \right)$ is divisible by both $p$ and $q$.  However, since $p \vert N$ \& $q \vert N$ and $\gcd \left( p, q \right) = 1$, we must have $\left( x - x' \right)$ divisible by $p q = N$.  This implies that $x = x' \mod N$ and $x' = x \mod N$.  Moreover, since $x, x' \in \Z_N$, we \underline{must} have $x = x'$ so $f$ \emph{must} alsp be \textbf{one-to-one}. \newline
+
+Continuing, since $\left| \Z_p \right| = p$ and $\left| \Z_q \right| = q$, we must have
+
+\begin{align}
+  \left| \Z_p \times \Z_q \right| = \left| \Z_p \right| \cdot \left| \Z_q \right| = p q \label{eq5a}
+\end{align}
+
+Now, we have $N = p q$ and $\left| \Z_N \right| = N$, so the expression in \ref{eq5a} becomes
+
+\begin{align*}
+  \left| \Z_p \times \Z_q \right| &= p q \\
+  &= N \\
+  &= \left| \Z_N \right|
+\end{align*}
+
+Therefore, $f$ must also be \underline{onto} and, by extension, \underline{bijective}. \newline
+
+Finally, we must show that 
+
+\begin{align*}
+  f \left( \left(a + b\right) \mod N \right) &= \left[\left( a + b \right) \mod p \right] \circ_{\Z_N} \left[\left( a + b \right) \mod q \right] \\
+  &= \left[\left( a + b \right) \mod p \right] \boxplus \left[\left( a + b \right) \mod q \right] \\
+  &= f \left( a \right) \boxplus f \left( b \right)
+\end{align*}
+
+Since we have defined $f \left( x \right) \equiv \left( \left[ x \mod p \right], \left[ x \mod q \right] \right)$, we may write $f \left( \left(a + b\right) \mod N \right)$ as 
+
+\begin{align}
+  f \left( \left(a + b\right) \mod N \right) &= \left( \left[ \left[ \left(a + b\right) \mod N \right] \mod p \right], \left[ \left[ \left(a + b\right) \mod  N \right] \mod q \right] \right) \label{eq5b}
+\end{align}
+
+Now, since $p \vert N$ and $q \vert N$, we have
+
+\begin{align*}
+  \left[ \left[ X \mod N \right] \mod p \right] &= \left[ \left[ X \mod p \right] \mod p \right] \\
+  &= \left[ X \mod p \right] 
+\end{align*}
+
+and
+
+\begin{align*}
+  \left[ \left[ X \mod N \right] \mod q \right] &= \left[ \left[ X \mod q \right] \mod q \right] \\
+  &= \left[ X \mod p \right] 
+\end{align*}
+
+Therefore, the expression in \ref{eq5b} becomes
+
+\begin{align}
+  f \left( \left(a + b\right) \mod N \right) &= \left( \left[ \left[ \left(a + b\right) \mod N \right] \mod p \right], \left[ \left[ \left(a + b\right) \mod  N \right] \mod q \right] \right) \notag \\
+  &= \left( \left[ \left[ \left(a + b\right) \mod p \right] \mod p \right], \left[ \left[ \left(a + b\right) \mod  q \right] \mod q \right] \right) \notag \\
+  &= \left( \left[ \left(a + b\right) \mod p \right], \left[ \left(a + b\right) \mod q \right] \right) \notag
+\end{align}
+
+Separating this result according to $a$ and $b$ gives
+
+\begin{align*}
+  \left( \left[ \left(a + b\right) \mod p \right], \left[ \left(a + b\right) \mod q \right] \right) &= \left( \left[ a \mod p \right], \left[ a \mod q \right] \right) \boxplus \left( \left[ b \mod p \right], \left[ b \mod q \right] \right) \\
+  &= f \left( a \right) \boxplus f \left( b \right)
+\end{align*}
+
+as desired. \\
+$\square$
+
+
+
+
+\end{flushleft}
+\end{document}

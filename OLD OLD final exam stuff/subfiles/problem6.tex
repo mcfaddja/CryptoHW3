@@ -1,0 +1,74 @@
+\documentclass[../CryptoFinal.tex]{subfiles}
+
+\begin{document}
+\begin{flushleft}
+
+
+
+\numbpr{6}
+\prob{6}  We begin by applying the function mapping $\Z_N$ to $\Z_p \times \Z_q$ (denoted $f$) to $\left( x^e \right)^d$.  This gives us
+
+\begin{align*}
+  f \left( \left( x^e \right)^d \right) &= \left( \left[ \left( x_p^e \right)^d \mod p \right], \left[ \left( x_q^e \right)^d \mod q \right] \right) \\
+  &= \left( \left[ \left( x_p^{e \, d} \right) \mod p \right], \left[ \left( x_q^{e \, d} \right) \mod q \right] \right)
+\end{align*}
+
+We now substitute $ed = 1 \mod \phi \left( N \right)$ into our previous result to obtain
+
+\begin{align*}
+  f \left( \left( x^e \right)^d \right) &= \left( \left[ \left( x_p^{e \, d} \right) \mod p \right], \left[ \left( x_q^{e \, d} \right) \mod q \right] \right) \\
+  &= \left( \left[ \left( x_p^{1 \mod \phi \left( N \right)} \right) \mod p \right], \left[ \left( x_q^{1 \mod \phi \left( N \right)} \right) \mod q \right] \right)
+\end{align*}
+
+Using the definition of $\phi \left( \cdots \right)$ as well as the fact that $N = p q$, where $p$ and $q$ are distinct primes, we note that $\phi \left( N \right) = \phi \left( p \right) \, \phi \left( q \right)$.  Therefore, our previous result can be rewritten as
+
+\begin{align}
+  f \left( \left( x^e \right)^d \right) &= \left( \left[ \left( x_p^{1 \mod \phi \left( N \right)} \right) \mod p \right], \left[ \left( x_q^{1 \mod \phi \left( N \right)} \right) \mod q \right] \right) \notag \\
+  &= \left( \left[ \left( x_p^{1 \mod \phi \left( p \right) \, \phi \left( q \right)} \right) \mod p \right], \left[ \left( x_q^{1 \mod \phi \left( p \right) \, \phi \left( q \right)} \right) \mod q \right] \right) \label{eq6a}
+\end{align}
+
+Using the relation $a^{\phi \left( N \right)} = 1 \mod N$, we see that $\phi \left( q \right)$ will cancel from the exponent in the first part of the left-hand-term in \ref{eq6a}.  Similarly, $\phi \left( q \right)$ will also cancel from the second part of the left-hand-term in \ref{eq6a}.  Therefore, our expression in \ref{eq6a} can be simplified to give
+
+\begin{align}
+  f \left( \left( x^e \right)^d \right) &= \left( \left[ \left( x_p^{1 \mod \phi \left( p \right) \, \phi \left( q \right)} \right) \mod p \right], \left[ \left( x_	q^{1 \mod \phi \left( p \right) \, \phi \left( q \right)} \right) \mod q \right] \right) \notag \\
+  &= \left( \left[ \left( x_p^{1 \mod \phi \left( q \right)} \right) \mod p \right], \left[ \left( q^{1 \mod \phi \left( p \right)} \right) \mod q \right] \right) \notag
+\end{align}
+
+Noting that $b \mod p = \left[ b \mod c \right] \mod c$, we modify our previous result to give
+
+\begin{align}
+  f \left( \left( x^e \right)^d \right) &= \left( \left[ \left( x_p^{1 \mod \phi \left( q \right)} \right) \mod p \right], \left[ \left( x_q^{1 \mod \phi \left( p \right)} \right) \mod q \right] \right) \notag \\
+  &= \left( \left[ \left( \left( x_p^{1 \mod \phi \left( q \right)} \right) \mod p \right) \mod p \right], \left[ \left( \left( x_q^{1 \mod \phi \left( p \right)} \right) \mod q \right) \mod q \right] \right) \notag
+\end{align}
+
+Again using the relation $a^{\phi \left( N \right)} = 1 \mod N$, we are able to simplify our previous result as
+
+\begin{align}
+  f \left( \left( x^e \right)^d \right) &= \left( \left[ \left( \left( x^{1 \mod \phi \left( q \right)} \right) \mod p \right) \mod p \right], \left[ \left( \left( x^{1 \mod \phi \left( p \right)} \right) \mod q \right) \mod q \right] \right) \notag \\
+  &= \left( \left[ \left( x_p \mod \left( p q \right) \right) \mod p \right], \left[ \left( x_q \mod \left( q p \right) \right) \mod q \right] \right) \label{eq6b}
+\end{align}
+
+Finally, we note that $p q = q p = N$ and recall the definition of $f \left( \cdots \right)$.  These relations allow us to rewrite our result in expression \ref{eq6b} to give
+
+\begin{align}
+  f \left( \left( x^e \right)^d \right) &= \left( \left[ \left( x_p \mod \left( p q \right) \right) \mod p \right], \left[ \left( x_q \mod \left( q p \right) \right) \mod q \right] \right) \notag \\
+  &= \left( \left[ \left( x_p \mod N \right) \mod p \right], \left[ \left( x_q \mod N \right) \mod q \right] \right) \notag \\
+  &= f \left( x \mod N \right) \notag
+\end{align}
+
+We then take the inverse of $f \left( \cdots \right)$ to ultimately give
+
+\begin{align}
+  f \left( \left( x^e \right)^d \right) = f \left( x \mod N \right) \; \Longrightarrow \; \left( x^e \right)^d = x \mod N  \notag
+\end{align}
+
+as desired. \\
+$\square$
+
+
+
+
+
+
+\end{flushleft}
+\end{document}
