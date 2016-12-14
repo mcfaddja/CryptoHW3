@@ -6,7 +6,22 @@
 
 
 \numbpr{8}
-\prob{8}  
+\prob{8}  For a public key encryption scheme $\prod = \left( \text{{\fontfamily{phv}\selectfont Gen}}, \, \text{{\fontfamily{phv}\selectfont Enc}}, \, \text{{\fontfamily{phv}\selectfont Dec}} \right)$, we define \textbf{CPA} security according to the probability obtaining a secure result, as defined in the privacy experiment $\text{{\fontfamily{phv}\selectfont PubK}}^{\text{{\fontfamily{phv}\selectfont LR-cpa}}}_{\mathcal{A}, \prod}$.  This experiment goes as follows \newline
+
+
+\textbf{The LR-orcale experiment} $\text{{\fontfamily{phv}\selectfont PubK}}^{\text{{\fontfamily{phv}\selectfont LR-cpa}}}_{\mathcal{A}, \prod} \left( n \right)$
+
+\begin{enumerate}
+  \item $\text{{\fontfamily{phv}\selectfont Gen}} \left( 1^n \right)$ \emph{is run to obtain keys} $\left( pk, sk \right)$.
+  \item \emph{A uniform bit} $b \in \left\{ 0, 1 \right\}$ \emph{is chosen}.
+  \item \emph{The adversary} $\mathcal{A}$ \emph{is given input} $pk$ \emph{and oracle access to} $\text{{\fontfamily{phv}\selectfont LR}}_{pk,b} \left( \cdot , \cdot \right)$.
+  \item \emph{The adversary} $\mathcal{A}$ \emph{outputs a bit} $b'$.
+  \item \emph{The adversary} $\mathcal{A}$ \emph{is defined to be} $1$ \emph{if} $b' = b$, \emph{and} $0$ \emph{otherwise}.  \emph{If} $\text{{\fontfamily{phv}\selectfont PubK}}^{\text{{\fontfamily{phv}\selectfont LR-cpa}}}_{\mathcal{A}, \prod} \left( n \right) = 1$, \emph{we say that} $\mathcal{A}$ \textbf{succeeds}.
+\end{enumerate}
+
+Using this definition for the experiment $\text{{\fontfamily{phv}\selectfont PubK}}^{\text{{\fontfamily{phv}\selectfont LR-cpa}}}_{\mathcal{A}, \prod}$, we say that the encryption scheme $\prod$ is secure if the probability of $\mathcal{A}$ succeeding during $\text{{\fontfamily{phv}\selectfont PubK}}^{\text{{\fontfamily{phv}\selectfont LR-cpa}}}_{\mathcal{A}, \prod}$
+
+
 
 
 
