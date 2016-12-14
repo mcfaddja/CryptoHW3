@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.13)  14 DEC 2016 11:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.13)  14 DEC 2016 14:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -445,13 +445,13 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 5102 strings out of 493027
- 72426 string characters out of 6134069
- 159400 words of memory out of 5000000
- 8549 multiletter control sequences out of 15000+600000
- 11989 words of font info for 27 fonts, out of 8000000 for 9000
+ 5107 strings out of 493027
+ 72485 string characters out of 6134069
+ 159435 words of memory out of 5000000
+ 8553 multiletter control sequences out of 15000+600000
+ 21356 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,12n,45p,595b,2309s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 46i,12n,45p,595b,2381s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/tex-gyre/q-
 rm.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex1
 0.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10
@@ -462,11 +462,12 @@ usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
 sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr
 /local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><
 /usr/local/texlive/2015/texmf-dist/fonts/type1/public/tex-gyre/qbkb.pfb></usr/l
-ocal/texlive/2015/texmf-dist/fonts/type1/public/tex-gyre/qbkr.pfb>
-Output written on problem2.pdf (2 pages, 114140 bytes).
+ocal/texlive/2015/texmf-dist/fonts/type1/public/tex-gyre/qbkr.pfb></usr/local/t
+exlive/2015/texmf-dist/fonts/type1/public/tex-gyre/qbkri.pfb>
+Output written on problem2.pdf (2 pages, 136330 bytes).
 PDF statistics:
- 52 PDF objects out of 1000 (max. 8388607)
- 37 compressed objects within 1 object stream
+ 56 PDF objects out of 1000 (max. 8388607)
+ 40 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
