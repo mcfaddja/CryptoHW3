@@ -1,0 +1,131 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3174,        121]
+NotebookOptionsPosition[      2529,         92]
+NotebookOutlinePosition[      2913,        109]
+CellTagsIndexPosition[      2870,        106]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Problem 3", "Subsection",
+ CellChangeTimes->{{3.6904409144700747`*^9, 3.690440923310101*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Part A", "Subsubsection",
+ CellChangeTimes->{{3.690440926391201*^9, 3.690440928310329*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"FS3a", "[", "aa_", "]"}], ":=", 
+  RowBox[{"FullSimplify", "[", 
+   RowBox[{"aa", ",", 
+    RowBox[{"Assumptions", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"p", "\[Element]", "Integers"}], ",", 
+       RowBox[{"p", ">", "1"}], ",", 
+       RowBox[{"e", "\[Element]", "Integers"}], ",", 
+       RowBox[{"e", ">", "1"}]}], "}"}]}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.690440931809525*^9, 3.690440981710394*^9}, {
+  3.690441042134698*^9, 3.690441043004755*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Sum", "[", 
+   RowBox[{
+    RowBox[{"p", "^", "i"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", "0", ",", 
+      RowBox[{"e", "-", "1"}]}], "}"}]}], "]"}], "//", "FS3a"}]], "Input",
+ CellChangeTimes->{{3.69044099346551*^9, 3.690441026654364*^9}, {
+  3.6904410600218687`*^9, 3.690441081419148*^9}}],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{
+   RowBox[{"-", "1"}], "+", 
+   SuperscriptBox["p", "e"]}], 
+  RowBox[{
+   RowBox[{"-", "1"}], "+", "p"}]]], "Output",
+ CellChangeTimes->{{3.6904410080807047`*^9, 3.690441082440611*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Product", "[", 
+   RowBox[{
+    RowBox[{"p", "^", "i"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", "1", ",", 
+      RowBox[{"e", "-", "1"}]}], "}"}]}], "]"}], "//", "FS3a"}]], "Input",
+ CellChangeTimes->{{3.6904410971895437`*^9, 3.690441112005794*^9}}],
+
+Cell[BoxData[
+ SuperscriptBox["p", 
+  RowBox[{
+   FractionBox["1", "2"], " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"-", "1"}], "+", "e"}], ")"}], " ", "e"}]]], "Output",
+ CellChangeTimes->{{3.690441105963122*^9, 3.6904411129242373`*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{808, 717},
+WindowMargins->{{Automatic, 84}, {29, Automatic}},
+Magnification:>1.5 Inherited,
+FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (June 27, \
+2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 99, 1, 65, "Subsection"],
+Cell[CellGroupData[{
+Cell[704, 27, 97, 1, 52, "Subsubsection"],
+Cell[804, 30, 520, 13, 94, "Input"],
+Cell[CellGroupData[{
+Cell[1349, 47, 336, 9, 43, "Input"],
+Cell[1688, 58, 225, 7, 71, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1950, 70, 292, 8, 43, "Input"],
+Cell[2245, 80, 244, 7, 88, "Output"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
