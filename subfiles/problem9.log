@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.13)  15 DEC 2016 18:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.13)  15 DEC 2016 22:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -437,31 +437,60 @@ LaTeX Font Info:    Try loading font information for U+rsfs on input line 9.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-) [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+)
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 9.
 
-] (./problem9.aux) )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1phv.fd
+File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
+)
+LaTeX Font Info:    Try loading font information for OMS+qbk on input line 21.
+LaTeX Font Info:    No file OMSqbk.fd. on input line 21.
+
+
+LaTeX Font Warning: Font shape `OMS/qbk/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbullet' on input line 21.
+
+[1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+]
+(./problem9.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 5105 strings out of 493027
- 72473 string characters out of 6134069
- 154415 words of memory out of 5000000
- 8551 multiletter control sequences out of 15000+600000
- 21356 words of font info for 30 fonts, out of 8000000 for 9000
+ 5171 strings out of 493027
+ 73384 string characters out of 6134069
+ 158415 words of memory out of 5000000
+ 8608 multiletter control sequences out of 15000+600000
+ 33734 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,11n,45p,388b,2311s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 46i,13n,45p,343b,2311s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/tex-gyre/q-
-rm.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi1
-0.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/m
-sbm10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/tex-gyre/qbkb.
-pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/tex-gyre/qbkr.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/tex-gyre/qbkri.pfb>
-Output written on problem9.pdf (1 page, 86101 bytes).
+rm.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/lo
+cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/loc
+al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local
+/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/t
+exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/tex
+live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texliv
+e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2
+015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/20
+15/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015
+/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/public/tex-gyre/qbkb.pfb></usr/local/texlive/2015/t
+exmf-dist/fonts/type1/public/tex-gyre/qbkbi.pfb></usr/local/texlive/2015/texmf-
+dist/fonts/type1/public/tex-gyre/qbkr.pfb></usr/local/texlive/2015/texmf-dist/f
+onts/type1/public/tex-gyre/qbkri.pfb></usr/local/texlive/2015/texmf-dist/fonts/
+type1/urw/helvetic/uhvr8a.pfb>
+Output written on problem9.pdf (1 page, 167194 bytes).
 PDF statistics:
- 29 PDF objects out of 1000 (max. 8388607)
- 20 compressed objects within 1 object stream
+ 66 PDF objects out of 1000 (max. 8388607)
+ 48 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

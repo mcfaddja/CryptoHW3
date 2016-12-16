@@ -6,13 +6,31 @@
 
 
 \numbpr{9}
-\prob{9} Put simply, the \textbf{DDH} Assumption allows two parties communicating over an encrypted channel to derive a shared value $k$ (\emph{usually for use as a shared private key}) so that given any eavesdropper, $k$ is indistinguishable from a uniform element of some group $\mathbb{G}$.  
+\prob{9} To begin, consider an arbitrary cyclic group $\mathbb{G}$ and a generator $g \in \mathcal{G}$.  Then, given any two group elements $h_1$ and $h_2$, we define the function $\text{{\fontfamily{phv}\selectfont DH}} \left( h_1, h_2 \right)$ as
+
+\begin{align}
+  \text{{\fontfamily{phv}\selectfont DH}} \left( h_1, h_2 \right) = g^{\log_g h_1 \, \cdot \, \log_g h_2}
+\end{align}
+
+The \textbf{\emph{DDH}} \emph{Assumption} is that the result of $\text{{\fontfamily{phv}\selectfont DH}} \left( h_1, h_2 \right)$, on any uniform group elements $h_1$ and $h_2$, is indistinguishable from any other uniform element of the group. \newline
 
 
+Now, we define the \textbf{\emph{El Gamal}} \emph{encryption} algorithm according to 
 
+\begin{itemize}
+  \item \emph{Accept input public key} $pk = \langle \mathbb{G}, q, g, h \rangle$.
+  \item \emph{Chose} $y \leftarrow \Z_q$ 
+  \item \emph{Output the cipher text} $c = \langle c_1, c_2 \rangle$ \emph{determined according to}
+  	\begin{align*}
+	  c = \langle c_1, c_2 \rangle = \langle g^y, h^y \cdot m \rangle
+	\end{align*}
+\end{itemize}
 
+We also note that the \textbf{\emph{El Gamal}} \emph{encryption} algorithm uses the private key $sk = \langle \mathbb{G}, q, g, x \rangle$.  Where $\left( \mathbb{G}, q, g, \right)$ is obtained from a generator and $h$ is defined $h \equiv g^x$.  Therefore, cipher-text may be encrypted according to the relation
 
-
+\begin{align*}
+  \text{For cipher-text } c = \langle c_1, c_2 \rangle \text{ decrypt using } \; \boxed{m \equiv \frac{c_2}{c_1^x}}
+\end{align*}
 
 
 
