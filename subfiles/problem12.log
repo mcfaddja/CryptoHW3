@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.13)  16 DEC 2016 07:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.13)  16 DEC 2016 07:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -363,7 +363,7 @@ LaTeX Font Info:    Try loading font information for OT1+qbk on input line 36.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/tex-gyre/ot1qbk.fd
 File: ot1qbk.fd 2009/09/25 v1.2 font definition file for OT1/qbk
 )))
-No file problem12.aux.
+(./problem12.aux)
 \openout1 = `problem12.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
@@ -378,6 +378,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
+
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count124
@@ -444,8 +445,8 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 5103 strings out of 493027
- 72454 string characters out of 6134069
+ 5105 strings out of 493027
+ 72482 string characters out of 6134069
  154415 words of memory out of 5000000
  8551 multiletter control sequences out of 15000+600000
  21356 words of font info for 30 fonts, out of 8000000 for 9000
