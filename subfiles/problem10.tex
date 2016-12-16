@@ -6,31 +6,11 @@
 
 
 \numbpr{10}
-\prob{10}  
+\prob{10}  \emph{Any} \textbf{RSA} implementation where the modulus $N$ is prime will always be insecure.  There are two reasons for this insecurity.  These reasons are rooted in the fundamental mathematics that underlies \emph{all} \textbf{RSA} based crypto-systems.  While each of these reasons is sufficient to cause a break in security on its own, choosing the modulus as $N$ a prime forces both of these to occur. \newline
 
+The first reason has to do with the elements in the group defined by $N$ and used in any \textbf{RSA} crypto-system, $\mathbb{G} = \Z_N^\star$.  When $N$ is prime, then $\Z_N^\star$, is automatically known because $\Z_N = \Z_N^\star$, by the definition of primality. The problem is that this every element in $\left[ 0, N \right]$ will be in the group eliminating the ambiguity about which elements belong to the group in use.  Furthermore, this choice of $N$ eliminates the ability to use any element of the group as a generator.  This makes the \emph{Discrete Logarithm Problem} easier to solve.  Since the difficulty of the \emph{Discrete Logarithm Problem} constitutes a critical part of the fundamental mathematical assumptions relied upon by all \textbf{RSA} crypto-systems, this choice of $N$ causes any implementation using it to be insecure. \newline
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+The other reason setting the modulus $N$ as a prime is problematic has to do with the order of $\Z_N^\star$, $\left| \Z_N^\star \right|$.  When $N$ is prime, then $\left| \Z_N^\star \right|$ cannot be prime for any $N > 3$, by the definition primality.  The problem here is that the \emph{Decisional Diffe-Hellman Problem} is not hard for groups with a non-prime order.  The security \textbf{RSA} relies upon the fundamental mathematical difficulty of solving the \emph{Decisional Diffe-Hellman Problem}.  Since this choice of $N$ makes the \emph{Decisional Diffe-Hellman Problem} easier to solve, it will also break the security of any \textbf{RSA} implementation using that choice.
 
 
 
